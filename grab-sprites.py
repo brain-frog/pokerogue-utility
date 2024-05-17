@@ -81,8 +81,9 @@ def rgb2hex(r, g, b):
 def hex2rgb(hex):
     return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
 
-def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName):
-    saveDirPath = "./sprites/shiny/"+str(getSaveDir(fileName[:-2] if "_" in fileName else fileName))
+def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny):
+    baseDir = "./sprites/shiny/" if shiny == True else "./sprites/default/"
+    saveDirPath = baseDir+str(getSaveDir(fileName[:-2] if "_" in fileName else fileName))
     if not os.path.exists(saveDirPath):
         os.mkdir(saveDirPath)
     spriteDefaultFrame.save(saveDirPath + "/"+ getFileName(folderName, fileName + variantAddition) + imageExtension)
@@ -90,6 +91,10 @@ def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName):
 def convertToVariant(path, folderName, fileName):
     variantJSON = getSpriteJSON(path + "/" + folderName, fileName)
     variantPalettes = json.load(variantJSON)
+    if not folderName == "pokemon":
+        shiny = True
+    else:
+        shiny = False
 
     for palette in variantPalettes:
         if fileName in masterListJSON:
@@ -111,7 +116,7 @@ def convertToVariant(path, folderName, fileName):
                         spriteSheet.putpixel((x,y), hex2rgb(variantPalettes[palette][pixelHex]))
         variantAddition = "_" + palette if int(palette) > 0 else ""
         spriteDefaultFrame = spriteSheet.crop(cropSettings)
-        saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName)
+        saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny)
         spriteSheet.close()
         spriteJSON.close()
     variantJSON.close()
@@ -126,12 +131,16 @@ def getFinalFileName(fileName):
     return finalFileName
 
 def getDefaultSprite(path, folderName, fileName):
+    if not folderName == "pokemon":
+        shiny = True
+    else:
+        shiny = False
     if "_" in fileName and fileName[:-2] in masterListJSON:
         if masterListJSON[fileName[:-2]][int(fileName[-1])-1] != 2:
             return
         if "890-" in fileName:
             spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
-            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName)
+            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName, shiny)
             spriteSheet.close()
             return
     spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
@@ -140,7 +149,7 @@ def getDefaultSprite(path, folderName, fileName):
     cropSettings = getSpriteCropSettings(spriteJSON)
 
     spriteDefaultFrame = spriteSheet.crop(cropSettings)
-    saveSprite(spriteDefaultFrame, getFinalFileName(fileName), "", folderName)
+    saveSprite(spriteDefaultFrame, getFinalFileName(fileName), "", folderName, shiny)
     spriteSheet.close()
     spriteJSON.close()
 
@@ -177,7 +186,7 @@ def getSpritesFromAllDir(path):
     for (root, dirs, files) in os.walk(path):
         baseName = os.path.basename(root)
         exclude = ["input", "icons", "exp", "back"]
-        include = ["shiny", "variant"]
+        include = ["shiny", "variant", "pokemon"]
         if any(dirName in root for dirName in exclude):
             continue
         if any(dirName in root for dirName in include):
