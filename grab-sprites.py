@@ -49,11 +49,11 @@ def getSaveDir(fileName):
         7: 809,
         8: 905,
         9: 1025,
-        10: 2015,
-        11: 2670,
-        12: 4618,
-        13: 6724,
-        14: 8901,
+        10: 2105, # alolan forms
+        11: 2670, # eternal flower floette
+        12: 4618, # galarian forms
+        13: 6724, # hisuian forms
+        14: 8901, # paldean forms
     }
     for g in generation:
         if species <= generation[g]:
