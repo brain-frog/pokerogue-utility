@@ -116,9 +116,23 @@ def convertToVariant(path, folderName, fileName):
         spriteJSON.close()
     variantJSON.close()
 
+def getFinalFileName(fileName):
+    finalFileName = fileName
+    if "_" in fileName:
+        if fileName[-1] == "2" or fileName[-1] == "3":
+            finalFileName = fileName[:-1] + str(int(fileName[-1])-1)
+        else:
+            finalFileName = fileName[:-2]
+    return finalFileName
+
 def getDefaultSprite(path, folderName, fileName):
     if "_" in fileName and fileName[:-2] in masterListJSON:
         if masterListJSON[fileName[:-2]][int(fileName[-1])-1] != 2:
+            return
+        if "890-" in fileName:
+            spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
+            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName)
+            spriteSheet.close()
             return
     spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
     spriteJSON = getSpriteJSON(path + "/" + folderName, fileName)
@@ -126,13 +140,7 @@ def getDefaultSprite(path, folderName, fileName):
     cropSettings = getSpriteCropSettings(spriteJSON)
 
     spriteDefaultFrame = spriteSheet.crop(cropSettings)
-    finalFileName = fileName
-    if "_" in fileName:
-        if fileName[-1] == "2" or fileName[-1] == "3":
-            finalFileName = fileName[:-1] + str(int(fileName[-1])-1)
-        else:
-            finalFileName = fileName[:-2]
-    saveSprite(spriteDefaultFrame, finalFileName, "", folderName)
+    saveSprite(spriteDefaultFrame, getFinalFileName(fileName), "", folderName)
     spriteSheet.close()
     spriteJSON.close()
 
