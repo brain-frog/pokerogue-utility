@@ -11,6 +11,13 @@ jsonExtension = ".json"
 masterListFile = open(baseUrl + "/variant/_masterlist.json")
 masterListJSON = json.load(masterListFile)
 
+# TODO: 
+# 1. Add trainer sprites
+# 2. Compare current saved sprite to modified date on png/json in repo
+#       so only updated sprites get run
+# 3. cleanup/comment functions
+# 4. scale all sprites to the same dimensions based on the largest one
+
 def getSpriteSheet(path, speciesIndex):
     return path + "/"+speciesIndex+imageExtension
     
