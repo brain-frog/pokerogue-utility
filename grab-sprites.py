@@ -12,11 +12,10 @@ masterListFile = open(baseUrl + "/variant/_masterlist.json")
 masterListJSON = json.load(masterListFile)
 
 # TODO: 
-# 1. Add trainer sprites
-# 2. Compare current saved sprite to modified date on png/json in repo
+# 1. Compare current saved sprite to modified date on png/json in repo
 #       so only updated sprites get run
-# 3. cleanup/comment functions
-# 4. scale all sprites to the same dimensions based on the largest one
+# 2. cleanup/comment functions
+# 3. scale all sprites to the same dimensions based on the largest one
 
 def getSpriteSheet(path, speciesIndex):
     return path + "/"+speciesIndex+imageExtension
@@ -30,7 +29,7 @@ def getSpriteCropSettings(jsonFile):
 
     def findFirst(frames):
         for f in frames:
-            if f['filename'] == "0001.png":
+            if f['filename'] == "0001.png" or f['filename'] == "1":
                 return f
 
     defaultFrameData = findFirst(spriteJSONFrames)["frame"]
@@ -41,7 +40,7 @@ def getSpriteCropSettings(jsonFile):
         defaultFrameData['y'] + defaultFrameData['h']
     )
 
-def getSaveDir(fileName):
+def getPokemonSpriteSaveDir(fileName):
     try: 
         species = int(fileName)
     except ValueError:
@@ -88,9 +87,22 @@ def rgb2hex(r, g, b):
 def hex2rgb(hex):
     return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
 
-def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny):
-    baseDir = "./sprites/shiny/" if shiny == True else "./sprites/default/"
-    saveDirPath = baseDir+str(getSaveDir(fileName[:-2] if "_" in fileName else fileName))
+def getSaveDir(path, folderName, fileName, shiny):
+    baseUrl = "./sprites/"
+    saveDir = ""
+    if "pokemon" in path or "pokemon" in folderName:
+        saveDir = baseUrl + "shiny/" if shiny == True else baseUrl + "default/"
+        saveDir = saveDir + str(getPokemonSpriteSaveDir(fileName[:-2] if "_" in fileName else fileName))
+    else:
+        try:
+            saveDir = baseUrl + path.split("images/", 1)[1]
+        except IndexError:
+            saveDir = baseUrl + folderName
+    return saveDir
+
+
+def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny, path):
+    saveDirPath = getSaveDir(path, folderName, fileName, shiny)
     if not os.path.exists(saveDirPath):
         os.mkdir(saveDirPath)
     spriteDefaultFrame.save(saveDirPath + "/"+ getFileName(folderName, fileName + variantAddition) + imageExtension)
@@ -123,7 +135,7 @@ def convertToVariant(path, folderName, fileName):
                         spriteSheet.putpixel((x,y), hex2rgb(variantPalettes[palette][pixelHex]))
         variantAddition = "_" + palette if int(palette) > 0 else ""
         spriteDefaultFrame = spriteSheet.crop(cropSettings)
-        saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny)
+        saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny, path)
         spriteSheet.close()
         spriteJSON.close()
     variantJSON.close()
@@ -133,7 +145,7 @@ def getFinalFileName(fileName):
     if "_" in fileName:
         if fileName[-1] == "2" or fileName[-1] == "3":
             finalFileName = fileName[:-1] + str(int(fileName[-1])-1)
-        else:
+        elif not fileName[-1] == "m" and not fileName[-1] == "f":
             finalFileName = fileName[:-2]
     return finalFileName
 
@@ -147,7 +159,7 @@ def getDefaultSprite(path, folderName, fileName):
             return
         if "890-" in fileName:
             spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
-            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName, shiny)
+            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName, shiny, path)
             spriteSheet.close()
             return
     spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
@@ -156,15 +168,21 @@ def getDefaultSprite(path, folderName, fileName):
     cropSettings = getSpriteCropSettings(spriteJSON)
 
     spriteDefaultFrame = spriteSheet.crop(cropSettings)
-    saveSprite(spriteDefaultFrame, getFinalFileName(fileName), "", folderName, shiny)
+    saveSprite(spriteDefaultFrame, getFinalFileName(fileName), "", folderName, shiny, path)
     spriteSheet.close()
     spriteJSON.close()
 
+def getRegexpPattern(path, folderName):
+    if "pokemon" in path or "pokemon" in folderName:
+        return r"(\d+[\-\w]*)"
+    else:
+        return r"(\w+[\_\w]*)"
         
 def matchFiles(dir, index, path, folderName):
-    jsonFile = re.match(r"(\d+[\-\w]*)\.(json)", dir[index]) 
+    pattern = getRegexpPattern(path, folderName)
+    jsonFile = re.match(pattern + r"\.(json)", dir[index]) 
     try:
-        pngFile = re.match(r"(\d+[\-\w]*)\.(png)", dir[index+1])
+        pngFile = re.match(pattern + r"\.(png)", dir[index+1])
     except IndexError:
         pngFile = None
     if jsonFile != None and pngFile == None and ("variant" in folderName or "variant" in path):
@@ -182,7 +200,8 @@ def getAllSpritesFromFolder(folderName, path):
     folder.sort()
     fileCount = len(folder)
     print("Parsing: "+ folderName + "\t" + str(fileCount) + " files")
-    for index in range(0, fileCount):
+    index = 0
+    while index < fileCount:
         sys.stdout.write('{0} percent complete\r'.format(int((index/fileCount)*100)))
         sys.stdout.flush()   
         index += matchFiles(folder, index, path, folderName)
@@ -193,7 +212,7 @@ def getSpritesFromAllDir(path):
     for (root, dirs, files) in os.walk(path):
         baseName = os.path.basename(root)
         exclude = ["input", "icons", "exp", "back"]
-        include = ["shiny", "variant", "pokemon"]
+        include = ["shiny", "variant", "pokemon", "trainer", "character"]
         if any(dirName in root for dirName in exclude):
             continue
         if any(dirName in root for dirName in include):
@@ -204,7 +223,7 @@ def getSpritesFromAllDir(path):
         
 
         
-pathToImages = "../pokerogue/public/images/pokemon"
+pathToImages = "../pokerogue/public/images/trainer"
 start = time.time()
 getSpritesFromAllDir(pathToImages)
 masterListFile.close()
