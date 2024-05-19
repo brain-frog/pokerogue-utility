@@ -10,12 +10,11 @@ imageExtension = ".png"
 jsonExtension = ".json"
 masterListFile = open(baseUrl + "/variant/_masterlist.json")
 masterListJSON = json.load(masterListFile)
+updated = 0
 
 # TODO: 
-# 1. Compare current saved sprite to modified date on png/json in repo
-#       so only updated sprites get run
-# 2. cleanup/comment functions
-# 3. scale all sprites to the same dimensions based on the largest one
+# 1. cleanup/comment functions
+# 2. scale all sprites to the same dimensions based on the largest one
 
 def getSpriteSheet(path, speciesIndex):
     return path + "/"+speciesIndex+imageExtension
@@ -116,9 +115,19 @@ def convertToVariant(path, folderName, fileName):
         shiny = False
 
     for palette in variantPalettes:
+        variantAddition = "_" + palette if int(palette) > 0 else ""
         if fileName in masterListJSON:
             if masterListJSON[fileName][int(palette)] != 1:
                 continue
+            savePath = getSaveDir(path, folderName, fileName, shiny) + "/"+ getFileName(folderName, fileName + variantAddition) + imageExtension
+            if os.path.isfile(savePath):
+                lastmodified = os.path.getmtime(savePath)
+                palettelastmodified = os.path.getmtime(path + "/" + folderName + "/" + fileName + jsonExtension)
+                if lastmodified > palettelastmodified:
+                    continue
+                else:
+                    global updated
+                    updated += 1
         spriteSheet = Image.open(getSpriteSheet(baseUrl, fileName))
         spriteJSON = getSpriteJSON(baseUrl, fileName)
 
@@ -133,7 +142,7 @@ def convertToVariant(path, folderName, fileName):
                     pixelHex = rgb2hex(r, g, b)
                     if pixelHex in variantPalettes[palette]:
                         spriteSheet.putpixel((x,y), hex2rgb(variantPalettes[palette][pixelHex]))
-        variantAddition = "_" + palette if int(palette) > 0 else ""
+        
         spriteDefaultFrame = spriteSheet.crop(cropSettings)
         saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny, path)
         spriteSheet.close()
@@ -157,10 +166,8 @@ def getDefaultSprite(path, folderName, fileName):
     if "_" in fileName and fileName[:-2] in masterListJSON:
         if masterListJSON[fileName[:-2]][int(fileName[-1])-1] != 2:
             return
-        if "890-" in fileName:
-            spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
-            saveSprite(spriteSheet, getFinalFileName(fileName), "", folderName, shiny, path)
-            spriteSheet.close()
+    elif folderName == "shiny" and fileName in masterListJSON:
+        if masterListJSON[fileName][0] != 0:
             return
     spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
     spriteJSON = getSpriteJSON(path + "/" + folderName, fileName)
@@ -212,7 +219,7 @@ def getSpritesFromAllDir(path):
     for (root, dirs, files) in os.walk(path):
         baseName = os.path.basename(root)
         exclude = ["input", "icons", "exp", "back"]
-        include = ["shiny", "variant", "pokemon", "trainer", "character"]
+        include = ["shiny", "variant", "pokemon", "trainer"]
         if any(dirName in root for dirName in exclude):
             continue
         if any(dirName in root for dirName in include):
@@ -223,9 +230,9 @@ def getSpritesFromAllDir(path):
         
 
         
-pathToImages = "../pokerogue/public/images/trainer"
+pathToImages = "../pokerogue/public/images"
 start = time.time()
 getSpritesFromAllDir(pathToImages)
 masterListFile.close()
 end = time.time()
-print ('{:4.2f}'.format(end - start) + " second(s) to create sprites")
+print ('{:4.2f}'.format(end - start) + " second(s) to update " + str(updated) + " sprite(s)")
