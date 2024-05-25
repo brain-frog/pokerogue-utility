@@ -1,11 +1,16 @@
 from PIL import Image
+import configparser
 import time
 import json
 import re
 import os
 import sys
 
-baseUrl = "../pokerogue/public/images/pokemon"
+config = configparser.ConfigParser()
+config.read('config.ini')
+baseFolder = (config['CONFIG']['baseFolder'])
+
+baseUrl = baseFolder + "/public/images/pokemon"
 imageExtension = ".png"
 jsonExtension = ".json"
 masterListFile = open(baseUrl + "/variant/_masterlist.json")
