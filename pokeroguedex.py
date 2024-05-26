@@ -2,9 +2,9 @@ import configparser
 import json
 import re
 import dokuwikixmlrpc
-from get_species import getSpecies, getPokemonSpecies, getNumFromSpecies
-from egg_moves import getEggMoves
-from get_moves import getLevelMoves
+from pokedex.get_species import getSpecies, getPokemonSpecies, getNumFromSpecies
+from pokedex.egg_moves import getEggMoves
+from pokedex.get_moves import getLevelMoves
 
 config = configparser.ConfigParser()
 config.read('config.ini')

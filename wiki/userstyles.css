@@ -1,0 +1,119 @@
+:root {
+	/* dark theme */
+	--dark-main-background: #362d3e;
+	--dark-alt-text: #c3c3c3;
+	--dark-alt-background: #333333;
+	--dark-neutral-text: #dddddd;
+	--dark-neutral-background: #7a7a7a;
+	--dark-frame: #5e5e5e;
+	--dark-highlight: #ffff99;
+	--dark-link: #20b098;
+	--dark-page-background: #4a3e55;
+	--dark-inline-code: #bca27b;
+	--dark-code-background: #37373d;
+	--dark-text-selected: #ffffff;
+	--dark-hover-link: #275c9c;
+	--dark-existing-link: #1da089;
+	--dark-non-existing-link: #cd2a00;
+	--dark-scrollbar: #2c2c2c;
+	--dark-scrollbar-button: #4c4c4c;
+	/* light theme*/
+}
+
+img {
+	border: none !important;
+}
+table td,
+table th,
+table {
+	border-collapse: separate;
+	border-color: #dddddd;
+}
+
+table td,
+table th,
+table thead {
+	border: 1px solid #dddddd !important;
+}
+
+body.solar {
+	background-color: var(--dark-main-background);
+	color: #dddddd;
+	border-bottom: 1px solid;
+	border-color: var(--dark-main-background);
+
+	table td,
+	table th,
+	table {
+		border-color: var(--dark-main-background) !important;
+	}
+	a :not(.btn) {
+		color: #20b098;
+	}
+	.alert-info {
+		background-color: #135366;
+		border-color: #135366;
+	}
+	.panel-body {
+		background-color: #4a3e55;
+	}
+	.navbar,
+	.navbar-default .navbar-brand {
+		background-color: #28222e;
+		color: white;
+	}
+	.table-striped > tbody > tr:nth-of-type(2n + 1),
+	.panel-default > .panel-heading,
+	.panel-default {
+		background-color: #4e4158;
+		border-color: var(--dark-main-background);
+	}
+	.page-header,
+	.table > thead > tr > th {
+		border-bottom: 1px solid var(--dark-main-background);
+	}
+	#config__manager label {
+		color: white;
+	}
+	#config__manager tr .input {
+		background: transparent;
+	}
+	#config__manager tr input,
+	#config__manager tr textarea,
+	#config__manager tr select {
+		background-color: #a9bdbd;
+	}
+	#config__manager tr.default input {
+		background-color: #cdf;
+	}
+	.pgnb_title,
+	.pgnb_group_title {
+		background: var(--dark-main-background);
+	}
+	.pgnb_table tr:nth-child(2n + 1) {
+		background: var(--dark-main-background) !important;
+	}
+	.pgnb_group_title,
+	.pgnb_group {
+		border-top-color: 2px solid #4a3e55 !important;
+	}
+	.pgnb_group {
+		border-left-color: 2px solid #4a3e55 !important;
+	}
+	#dwpl-ti-container,
+	.dwpl-ti-content-box,
+	.dwpl-ti-tab {
+		background-color: transparent !important;
+		border-color: gray !important;
+		box-shadow: none !important;
+	}
+	#dwpl-ti-container,
+	.dwpl-ti-content-box {
+		border-style: dashed !important;
+		border-width: 1px 0 0 0 !important;
+	}
+
+	.dwpl-ti-tab .selected {
+		color: white !important;
+	}
+}
