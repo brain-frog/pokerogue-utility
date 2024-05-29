@@ -25,7 +25,13 @@ hasRareAndEpic = []
 missingOneVariant = []
 customSprites = []
 inconsistent = []
+hasNormalVariants = []
 isAVariant = (JSON_PALETTE_SWAP, CUSTOM_SPRITE_SHEET)
+
+skipForms = [
+    "664", # Scatterbug
+    "665"  # Spewpa
+]
 
 def missingVariantCheck(variants, id):
     """Checks a masterlist entry for if it was only given one variant but not the other
@@ -57,6 +63,9 @@ def checkAllSprites(id):
 
 for id in idtoname:
     missingV = [0, 1, 2]
+    # skip "forms" of pre-evolutions that forms dont affect
+    if "-" in id and id[:id.index("-")] in skipForms:
+        continue
     if id in masterlist:
         variants = masterlist[id]
         # Missing Variant
@@ -68,6 +77,8 @@ for id in idtoname:
         if CUSTOM_SPRITE_SHEET in variants:
             customSprites.append(idtoname[id])
         checkAllSprites(id)
+        if variants[RARE] != UNCHANGED and variants[EPIC] != UNCHANGED:
+            hasNormalVariants.append(idtoname[id])
         # Make sure it has all sprite versions
         for key in range(3):
             if variants[key] != UNCHANGED:
@@ -102,6 +113,11 @@ with open("missing_variants.txt", "w+") as output:
             pprint.pprint(data, output)
 
     sections = [
+        {
+            "msg": "Has Normal Variants",
+            "description": "Has RARE and EPIC variants",
+            "data": hasNormalVariants
+        },
         {
             "msg": "Only Base Replacement", 
             "description": "Only common shiny has been replaced", 

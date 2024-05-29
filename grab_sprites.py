@@ -19,13 +19,12 @@ updated = 0
 
 # TODO: 
 # 1. cleanup/comment functions
-# 2. scale all sprites to the same dimensions based on the largest one
 
-def getSpriteSheet(path, speciesIndex):# -> string
-    return path + "/"+speciesIndex+imageExtension
+def getSpriteSheet(path):# -> string
+    return path +imageExtension
     
-def getSpriteJSON(path, speciesIndex):
-    return open(path + "/"+speciesIndex+jsonExtension)  
+def getSpriteJSON(path):
+    return open(path +jsonExtension)  
 
 def getSpriteCropSettings(jsonFile): 
     spriteJSON = json.load(jsonFile)
@@ -88,8 +87,10 @@ def getFileName(folderName, fileName):
 def rgb2hex(r, g, b):
     return '{:02x}{:02x}{:02x}'.format(r, g, b)
     
-def hex2rgb(hex):
-    return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
+def hex2rgb(hex, a):
+    rgb = [int(hex[i:i+2], 16) for i in (0, 2, 4)]
+    rgb.append(a)
+    return tuple(rgb)
 
 def getSaveDir(path, folderName, fileName, shiny):
     baseUrl = "./sprites/"
@@ -104,52 +105,61 @@ def getSaveDir(path, folderName, fileName, shiny):
             saveDir = baseUrl + folderName
     return saveDir
 
+def makeSquare(image):
+    fill = (0, 0, 0, 0)
+    x, y = image.size
+    size = max(x, y)
+    squareimg = Image.new('RGBA', (size, size), fill)
+    squareimg.paste(image, (int((size - x) / 2), int((size - y) / 2)))
+    return squareimg
 
 def saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny, path):
     saveDirPath = getSaveDir(path, folderName, fileName, shiny)
     if not os.path.exists(saveDirPath):
         os.mkdir(saveDirPath)
+    # spriteDefaultFrame = makeSquare(spriteDefaultFrame)
     spriteDefaultFrame.save(saveDirPath + "/"+ getFileName(folderName, fileName + variantAddition) + imageExtension)
 
 def convertToVariant(path, folderName, fileName):
-    variantJSON = getSpriteJSON(path + "/" + folderName, fileName)
+    variantJSON = getSpriteJSON(os.path.join(path, folderName, fileName))
     variantPalettes = json.load(variantJSON)
-    if not folderName == "pokemon":
-        shiny = True
-    else:
-        shiny = False
+    isFemale = "female" in folderName
+    shiny = folderName != "pokemon"
+    masterListSection = masterListJSON["female"] if isFemale else masterListJSON
 
     for palette in variantPalettes:
         variantAddition = "_" + palette if int(palette) > 0 else ""
-        if fileName in masterListJSON:
-            if masterListJSON[fileName][int(palette)] != 1:
+        if fileName in masterListSection:
+            if masterListSection[fileName][int(palette)] != 1:
                 continue
             savePath = getSaveDir(path, folderName, fileName, shiny) + "/"+ getFileName(folderName, fileName + variantAddition) + imageExtension
             if os.path.isfile(savePath):
                 lastmodified = os.path.getmtime(savePath)
                 palettelastmodified = os.path.getmtime(path + "/" + folderName + "/" + fileName + jsonExtension)
-                if lastmodified > palettelastmodified:
-                    continue
-                else:
-                    global updated
-                    updated += 1
-        spriteSheet = Image.open(getSpriteSheet(baseUrl, fileName))
-        spriteJSON = getSpriteJSON(baseUrl, fileName)
+                # if lastmodified > palettelastmodified:
+                #     continue
+                # else:
+                #     global updated
+                #     updated += 1
+        spriteSheet = Image.open(getSpriteSheet(os.path.join(baseUrl, fileName)))
+        spriteJSON = getSpriteJSON(os.path.join(baseUrl, fileName))
 
         cropSettings = getSpriteCropSettings(spriteJSON)
-        if (spriteSheet.mode == 'P' and 'transparency' in spriteSheet.info):
-            pixels = spriteSheet.convert('RGBA').load()
-            width, height = spriteSheet.size
-
-            for x in range(width):
-                for y in range(height):
-                    r, g, b, a = pixels[x, y]
-                    pixelHex = rgb2hex(r, g, b)
-                    if pixelHex in variantPalettes[palette]:
-                        spriteSheet.putpixel((x,y), hex2rgb(variantPalettes[palette][pixelHex]))
-        
         spriteDefaultFrame = spriteSheet.crop(cropSettings)
+        spriteDefaultFrame = spriteDefaultFrame.convert('RGBA')
+        pixels = spriteDefaultFrame.load()
+        width, height = spriteDefaultFrame.size
+
+        for x in range(width):
+            for y in range(height):
+                r, g, b, a = pixels[x, y]
+                pixelHex = rgb2hex(r, g, b)
+            
+                if pixelHex in variantPalettes[palette]:
+                    spriteDefaultFrame.putpixel((x,y), hex2rgb(variantPalettes[palette][pixelHex], a))
+        
         saveSprite(spriteDefaultFrame, fileName, variantAddition, folderName, shiny, path)
+        spriteDefaultFrame.close()
         spriteSheet.close()
         spriteJSON.close()
     variantJSON.close()
@@ -174,8 +184,8 @@ def getDefaultSprite(path, folderName, fileName):
     elif folderName == "shiny" and fileName in masterListJSON:
         if masterListJSON[fileName][0] != 0:
             return
-    spriteSheet = Image.open(getSpriteSheet(path + "/" + folderName, fileName))
-    spriteJSON = getSpriteJSON(path + "/" + folderName, fileName)
+    spriteSheet = Image.open(getSpriteSheet(os.path.join(path, folderName, fileName)))
+    spriteJSON = getSpriteJSON(os.path.join(path, folderName, fileName))
 
     cropSettings = getSpriteCropSettings(spriteJSON)
 
@@ -189,7 +199,7 @@ def getRegexpPattern(path, folderName):
         return r"(\d+[\-\w]*)"
     else:
         return r"(\w+[\_\w]*)"
-        
+
 def matchFiles(dir, index, path, folderName):
     pattern = getRegexpPattern(path, folderName)
     jsonFile = re.match(pattern + r"\.(json)", dir[index]) 
@@ -205,6 +215,26 @@ def matchFiles(dir, index, path, folderName):
             getDefaultSprite(path, folderName, pngFile.group(1)) 
         return 2
        
+def matchVariants(path, folderName, fileName, variantList):
+    for v in range(3):
+        if variantList[v] == 1:
+            jsonExists = os.path.exists(os.path.join(path, folderName, fileName + jsonExtension))
+            if not jsonExists:
+                print("json for " + fileName + " does not exist")
+                continue
+            convertToVariant(path, folderName, fileName)
+        if variantList[v] == 2:
+            sheetName = fileName + "_" + str(v+1)
+            pngExists = os.path.exists(os.path.join(path, folderName, sheetName + imageExtension))
+            jsonExists = os.path.exists(os.path.join(path, folderName, sheetName + jsonExtension))
+            if not jsonExists:
+                print("json for " + sheetName + " does not exist")
+                continue
+            if not pngExists:
+                print("spritesheet for " + sheetName + " does not exist")
+                continue
+            getDefaultSprite(path, folderName, sheetName)
+
 
 def getAllSpritesFromFolder(folderName, path):
     allContents = os.listdir(path + "/" + folderName)
@@ -218,6 +248,20 @@ def getAllSpritesFromFolder(folderName, path):
         sys.stdout.flush()   
         index += matchFiles(folder, index, path, folderName)
 
+def getAllVariantsFromFolder(folderName, path):
+    isFemale = folderName == "female"
+    masterListSection = masterListJSON["female"] if isFemale else masterListJSON
+    # ignore subsection names
+    ignore = ["back", "exp", "female"]
+    variantCount = len(masterListSection.keys())
+    print("Parsing: "+ folderName + "\t" + str(variantCount) + " files")
+    for v in masterListSection.keys():
+        if not v in ignore:
+            index = list(masterListSection.keys()).index(v)
+            sys.stdout.write('{0} percent complete\r'.format(int((index/variantCount)*100)))
+            sys.stdout.flush()   
+            matchVariants(path, folderName, v, masterListSection[v])
+
 
 def getSpritesFromAllDir(path):
     baseName = os.path.basename(path)
@@ -230,7 +274,11 @@ def getSpritesFromAllDir(path):
         if any(dirName in root for dirName in include):
             dirNameLen = len(baseName) + 1
 
-            getAllSpritesFromFolder(baseName, root[:-dirNameLen])
+            isVariant = ("variant" in baseName or "variant" in root)
+            if isVariant:
+                getAllVariantsFromFolder(baseName, root[:-dirNameLen])
+            else:
+                getAllSpritesFromFolder(baseName, root[:-dirNameLen])
             sys.stdout.write("100 percent complete\n\n")
         
 

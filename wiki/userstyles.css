@@ -46,6 +46,25 @@ table thead {
 	border: 1px solid var(--dark-neutral-text) !important;
 }
 
+body[data-page-id="starters:starters"] {
+	h2#generations + div.level2 {
+		text-align: center;
+
+		.img-responsive {
+			width: 30%;
+			padding: 1em;
+			max-width: 250px;
+		}
+		
+		@media (max-width : 600px) {
+			.img-responsive {
+				padding: 0.2em;
+			}
+		}
+	}
+	
+}
+
 body.solar {
 	background-color: var(--dark-main-background);
 	color: var(--dark-neutral-text);
@@ -140,5 +159,11 @@ body.solar {
 
 	.dwpl-ti-tab .selected {
 		color: white !important;
+	}
+	#mediamanager__page .panelHeader {
+		color: #333;
+	}
+	.dokuwiki .wrap_info {
+		color: black;
 	}
 }
