@@ -2,7 +2,7 @@ import configparser
 import os
 import json
 import re
-from utils import formatEnum, getNumFromSpecies
+from pokedex.utils import formatEnum, getNumFromSpecies
 
 config = configparser.ConfigParser()
 config.read('config.ini')

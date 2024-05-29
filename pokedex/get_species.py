@@ -1,7 +1,7 @@
 import configparser
 import json
 import re
-from utils import formatEnum, getNumFromSpecies
+from pokedex.utils import formatEnum, getNumFromSpecies
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -9,6 +9,19 @@ config.read('config.ini')
 baseUrl = (config['CONFIG']['baseFolder'])
 pokedexFile = (config['CONFIG']['pokedex'])
         
+SpeciesFormKey = {
+  "MEGA": "mega",
+  "MEGA_X": "mega-x",
+  "MEGA_Y": "mega-y",
+  "PRIMAL": "primal",
+  "ORIGIN": "origin",
+  "INCARNATE": "incarnate",
+  "THERIAN": "therian",
+  "GIGANTAMAX": "gigantamax",
+  "GIGANTAMAX_SINGLE": "gigantamax-single",
+  "GIGANTAMAX_RAPID": "gigantamax-rapid",
+  "ETERNAMAX": "eternamax"
+}
 
 # species.ts
 def getSpecies():
@@ -104,11 +117,17 @@ def getFormInfoFromLine(line):
     abilities = [formatEnum(paramList[6])]
     if formatEnum(paramList[7]) != "None" and paramList[6] != paramList[7]:
         abilities.append(formatEnum(paramList[7]))
+
+    def getFormKey(param):
+        if "SpeciesFormKey" in param:
+            return SpeciesFormKey[param[param.index(".")+1:]]
+        else:
+            return param.replace("\"", "").strip()
     
 
     entry = {
         "formName": paramList[0].replace("\"", ""),
-        # "formKey": formatEnum(paramList[1]),
+        "formKey": getFormKey(paramList[1]),
         "type1": formatEnum(paramList[2]),
         "type2": formatEnum(paramList[3]) if not paramList[3] == "null" else paramList[3],
         "height": float(paramList[4]),

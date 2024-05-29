@@ -1,4 +1,8 @@
 :root {
+	--pokerogue-icon-blue: #346485;
+	--pokerogue-icon-dark-blue: #2E4069;
+	--pokerogue-icon-red: #D73838;
+	--pokerogue-icon-dark-red: #671528;
 	/* dark theme */
 	--dark-main-background: #362d3e;
 	--dark-alt-text: #c3c3c3;
@@ -19,6 +23,12 @@
 	--dark-scrollbar-button: #4c4c4c;
 	/* light theme*/
 }
+#draft__status {
+	float: inherit;
+}
+div.alert-info > ul > li > div > a {
+	color: #28d4b7;
+}
 
 img {
 	border: none !important;
@@ -27,20 +37,31 @@ table td,
 table th,
 table {
 	border-collapse: separate;
-	border-color: #dddddd;
+	border-color: var(--dark-neutral-text);
 }
 
 table td,
 table th,
 table thead {
-	border: 1px solid #dddddd !important;
+	border: 1px solid var(--dark-neutral-text) !important;
 }
 
 body.solar {
 	background-color: var(--dark-main-background);
-	color: #dddddd;
+	color: var(--dark-neutral-text);
 	border-bottom: 1px solid;
 	border-color: var(--dark-main-background);
+
+	ul.admin_plugins > li > div > a,
+	ul.admin_tasks > li > div > a {
+		background-color: var(--dark-main-background);
+		span.prompt {
+			color: white;
+		}
+	}
+	div#admin__version > div{
+		color: var(--dark-alt-text);
+	}
 
 	table td,
 	table th,
@@ -55,24 +76,28 @@ body.solar {
 		border-color: #135366;
 	}
 	.panel-body {
-		background-color: #4a3e55;
+		background-color: var(--dark-page-background);
 	}
 	.navbar,
 	.navbar-default .navbar-brand {
 		background-color: #28222e;
 		color: white;
 	}
+	.table-striped > thead {
+		background-color: var(--dark-main-background);
+	}
 	.table-striped > tbody > tr:nth-of-type(2n + 1),
 	.panel-default > .panel-heading,
 	.panel-default {
-		background-color: #4e4158;
+		background-color: #3f314c;
 		border-color: var(--dark-main-background);
 	}
 	.page-header,
 	.table > thead > tr > th {
 		border-bottom: 1px solid var(--dark-main-background);
 	}
-	#config__manager label {
+	#config__manager label,
+	#dw__title {
 		color: white;
 	}
 	#config__manager tr .input {
@@ -95,10 +120,10 @@ body.solar {
 	}
 	.pgnb_group_title,
 	.pgnb_group {
-		border-top-color: 2px solid #4a3e55 !important;
+		border-top-color: 2px solid var(--dark-page-background) !important;
 	}
 	.pgnb_group {
-		border-left-color: 2px solid #4a3e55 !important;
+		border-left-color: 2px solid var(--dark-page-background) !important;
 	}
 	#dwpl-ti-container,
 	.dwpl-ti-content-box,

@@ -21,7 +21,7 @@ updated = 0
 # 1. cleanup/comment functions
 # 2. scale all sprites to the same dimensions based on the largest one
 
-def getSpriteSheet(path, speciesIndex):
+def getSpriteSheet(path, speciesIndex):# -> string
     return path + "/"+speciesIndex+imageExtension
     
 def getSpriteJSON(path, speciesIndex):

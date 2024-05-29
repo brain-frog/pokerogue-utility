@@ -1,4 +1,10 @@
 import json
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+pokedexFile = (config['CONFIG']['pokedex'])
 
 
 def getSpeciesGeneration(speciesId):
@@ -41,3 +47,18 @@ def getNumFromSpecies(name):
         keys=list(numtonameJSON.keys())
         values=list(numtonameJSON.values())
     return keys[values.index(name)]
+
+def updateIdToName():
+    with open(pokedexFile, "r") as pokedex:
+        pokedexJSON = json.load(pokedex)
+    idtoname = {}
+    for speciesid in pokedexJSON:
+        species = pokedexJSON[speciesid]
+        idtoname.update({speciesid: species["name"]})
+        if "forms" in species:
+            for f in species["forms"]:
+                form = f["formName"]
+                formKey = f["formKey"]
+                idtoname.update({speciesid + "-" + formKey: species["name"] + " " + form})
+    with open("./id_to_name.json", "w+") as idToName:
+        json.dump(idtoname, idToName, indent=4, ensure_ascii=False)

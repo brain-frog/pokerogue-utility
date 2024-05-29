@@ -231,6 +231,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Grass",
                 "type2": "Poison",
                 "height": 2.4,
@@ -255,6 +256,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Grass",
                 "type2": "Poison",
                 "height": 24.0,
@@ -553,6 +555,7 @@
         "forms": [
             {
                 "formName": "Mega X",
+                "formKey": "mega-x",
                 "type1": "Fire",
                 "type2": "Dragon",
                 "height": 1.7,
@@ -576,6 +579,7 @@
             },
             {
                 "formName": "Mega Y",
+                "formKey": "mega-y",
                 "type1": "Fire",
                 "type2": "Flying",
                 "height": 1.7,
@@ -599,6 +603,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Fire",
                 "type2": "Flying",
                 "height": 28.0,
@@ -908,6 +913,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.6,
@@ -931,6 +937,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Water",
                 "type2": "null",
                 "height": 25.0,
@@ -1148,6 +1155,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 17.0,
@@ -1378,6 +1386,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Bug",
                 "type2": "Poison",
                 "height": 1.4,
@@ -1694,6 +1703,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Normal",
                 "type2": "Flying",
                 "height": 2.2,
@@ -2440,7 +2450,183 @@
         "canChangeForm": "true",
         "forms": [
             {
+                "formName": "Partner",
+                "formKey": "partner",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 430,
+                    "hp": 45,
+                    "atk": 80,
+                    "def": 50,
+                    "spatk": 75,
+                    "spdef": 60,
+                    "spd": 120
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Cosplay",
+                "formKey": "cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Cool Cosplay",
+                "formKey": "cool-cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Beauty Cosplay",
+                "formKey": "beauty-cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Cute Cosplay",
+                "formKey": "cute-cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Smart Cosplay",
+                "formKey": "smart-cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
+                "formName": "Tough Cosplay",
+                "formKey": "tough-cosplay",
+                "type1": "Electric",
+                "type2": "null",
+                "height": 0.4,
+                "weight": 6.0,
+                "abilities": [
+                    "Static"
+                ],
+                "abilityHidden": "Lightning Rod",
+                "baseStats": {
+                    "bst": 320,
+                    "hp": 35,
+                    "atk": 55,
+                    "def": 40,
+                    "spatk": 50,
+                    "spdef": 50,
+                    "spd": 90
+                },
+                "catchRate": 190,
+                "baseFriendship": 50,
+                "baseExp": 112,
+                "genderDiffs": "true"
+            },
+            {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Electric",
                 "type2": "null",
                 "height": 21.0,
@@ -2460,8 +2646,7 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 112,
-                "genderDiffs": "true"
+                "baseExp": 112
             }
         ],
         "cost": 4,
@@ -5248,6 +5433,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 33.0,
@@ -6518,6 +6704,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.2,
@@ -6839,6 +7026,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Fighting",
                 "type2": "null",
                 "height": 25.0,
@@ -8034,6 +8222,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Water",
                 "type2": "Psychic",
                 "height": 2.0,
@@ -9516,6 +9705,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Ghost",
                 "type2": "Poison",
                 "height": 1.4,
@@ -9539,6 +9729,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Ghost",
                 "type2": "Poison",
                 "height": 20.0,
@@ -10099,6 +10290,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Water",
                 "type2": "null",
                 "height": 19.0,
@@ -11861,6 +12053,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 2.2,
@@ -13116,6 +13309,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.7,
@@ -13412,6 +13606,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Water",
                 "type2": "Dark",
                 "height": 6.5,
@@ -13548,6 +13743,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Water",
                 "type2": "Ice",
                 "height": 24.0,
@@ -13733,7 +13929,34 @@
         "canChangeForm": "true",
         "forms": [
             {
+                "formName": "Partner",
+                "formKey": "partner",
+                "type1": "Normal",
+                "type2": "null",
+                "height": 0.3,
+                "weight": 6.5,
+                "abilities": [
+                    "Run Away",
+                    "Adaptability"
+                ],
+                "abilityHidden": "Anticipation",
+                "baseStats": {
+                    "bst": 435,
+                    "hp": 65,
+                    "atk": 75,
+                    "def": 70,
+                    "spatk": 65,
+                    "spdef": 85,
+                    "spd": 75
+                },
+                "catchRate": 45,
+                "baseFriendship": 50,
+                "baseExp": 65,
+                "genderDiffs": "false"
+            },
+            {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 18.0,
@@ -14783,6 +15006,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 2.1,
@@ -14913,6 +15137,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 35.0,
@@ -15724,6 +15949,7 @@
         "forms": [
             {
                 "formName": "Mega X",
+                "formKey": "mega-x",
                 "type1": "Psychic",
                 "type2": "Fighting",
                 "height": 2.3,
@@ -15747,6 +15973,7 @@
             },
             {
                 "formName": "Mega Y",
+                "formKey": "mega-y",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.5,
@@ -17989,6 +18216,7 @@
         "forms": [
             {
                 "formName": "Spiky-Eared",
+                "formKey": "spiky",
                 "type1": "Electric",
                 "type2": "null",
                 "height": 1.4,
@@ -18008,7 +18236,8 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 70,
-                "baseExp": 41
+                "baseExp": 41,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -18839,6 +19068,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 1.4,
@@ -21001,6 +21231,7 @@
         "forms": [
             {
                 "formName": "A",
+                "formKey": "a",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21020,10 +21251,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "B",
+                "formKey": "b",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21043,10 +21276,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "C",
+                "formKey": "c",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21066,10 +21301,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "D",
+                "formKey": "d",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21089,10 +21326,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "E",
+                "formKey": "e",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21112,10 +21351,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "F",
+                "formKey": "f",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21135,10 +21376,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "G",
+                "formKey": "g",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21158,10 +21401,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "H",
+                "formKey": "h",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21181,10 +21426,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "I",
+                "formKey": "i",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21204,10 +21451,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "J",
+                "formKey": "j",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21227,10 +21476,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "K",
+                "formKey": "k",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21250,10 +21501,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "L",
+                "formKey": "l",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21273,10 +21526,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "M",
+                "formKey": "m",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21296,10 +21551,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "N",
+                "formKey": "n",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21319,10 +21576,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "O",
+                "formKey": "o",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21342,10 +21601,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "P",
+                "formKey": "p",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21365,10 +21626,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Q",
+                "formKey": "q",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21388,10 +21651,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "R",
+                "formKey": "r",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21411,10 +21676,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "S",
+                "formKey": "s",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21434,10 +21701,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "T",
+                "formKey": "t",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21457,10 +21726,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "U",
+                "formKey": "u",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21480,10 +21751,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "V",
+                "formKey": "v",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21503,10 +21776,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "W",
+                "formKey": "w",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21526,10 +21801,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "X",
+                "formKey": "x",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21549,10 +21826,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Y",
+                "formKey": "y",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21572,10 +21851,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Z",
+                "formKey": "z",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21595,10 +21876,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "!",
+                "formKey": "exclamation",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21618,10 +21901,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             },
             {
                 "formName": "?",
+                "formKey": "question",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.5,
@@ -21641,7 +21926,8 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 118
+                "baseExp": 118,
+                "genderDiffs": "false"
             }
         ],
         "cost": 1,
@@ -22311,6 +22597,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Steel",
                 "type2": "Ground",
                 "height": 10.5,
@@ -22792,6 +23079,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 2.0,
@@ -23040,6 +23328,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Bug",
                 "type2": "Fighting",
                 "height": 1.7,
@@ -24632,6 +24921,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dark",
                 "type2": "Fire",
                 "height": 1.9,
@@ -26592,6 +26882,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Rock",
                 "type2": "Dark",
                 "height": 2.5,
@@ -27266,6 +27557,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Grass",
                 "type2": "Dragon",
                 "height": 1.9,
@@ -27619,6 +27911,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Fire",
                 "type2": "Fighting",
                 "height": 1.9,
@@ -27961,6 +28254,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Water",
                 "type2": "Ground",
                 "height": 1.9,
@@ -30110,6 +30404,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Psychic",
                 "type2": "Fairy",
                 "height": 1.6,
@@ -32100,6 +32395,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dark",
                 "type2": "Ghost",
                 "height": 0.5,
@@ -32242,6 +32538,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Steel",
                 "type2": "Fairy",
                 "height": 1.0,
@@ -32597,6 +32894,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Steel",
                 "type2": "null",
                 "height": 2.2,
@@ -32838,6 +33136,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Fighting",
                 "type2": "Psychic",
                 "height": 1.3,
@@ -33078,6 +33377,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Electric",
                 "type2": "null",
                 "height": 1.8,
@@ -34087,6 +34387,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Water",
                 "type2": "Dark",
                 "height": 2.5,
@@ -34531,6 +34832,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Fire",
                 "type2": "Ground",
                 "height": 2.5,
@@ -35752,6 +36054,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Fairy",
                 "height": 1.5,
@@ -37550,6 +37853,7 @@
         "forms": [
             {
                 "formName": "Normal Form",
+                "formKey": "",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 0.3,
@@ -37573,6 +37877,7 @@
             },
             {
                 "formName": "Sunny Form",
+                "formKey": "sunny",
                 "type1": "Fire",
                 "type2": "null",
                 "height": 0.3,
@@ -37596,6 +37901,7 @@
             },
             {
                 "formName": "Rainy Form",
+                "formKey": "rainy",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.3,
@@ -37619,6 +37925,7 @@
             },
             {
                 "formName": "Snowy Form",
+                "formKey": "snowy",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 0.3,
@@ -37972,6 +38279,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 1.2,
@@ -38502,6 +38810,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dark",
                 "type2": "null",
                 "height": 1.2,
@@ -38809,12 +39118,13 @@
         "baseFriendship": 50,
         "baseExp": 168,
         "growthRate": "Medium Fast",
-        "malePercent": 50.0,
+        "malePercent": 100.0,
         "genderDiffs": "false",
         "canChangeForm": "true",
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 2.1,
@@ -39928,6 +40238,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Flying",
                 "height": 1.8,
@@ -40197,6 +40508,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Steel",
                 "type2": "Psychic",
                 "height": 2.5,
@@ -40652,6 +40964,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Psychic",
                 "height": 1.8,
@@ -40793,6 +41106,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Psychic",
                 "height": 2.3,
@@ -40938,6 +41252,7 @@
         "forms": [
             {
                 "formName": "Primal",
+                "formKey": "primal",
                 "type1": "Water",
                 "type2": "null",
                 "height": 9.8,
@@ -41067,6 +41382,7 @@
         "forms": [
             {
                 "formName": "Primal",
+                "formKey": "primal",
                 "type1": "Ground",
                 "type2": "Fire",
                 "height": 5.0,
@@ -41196,6 +41512,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Flying",
                 "height": 10.8,
@@ -41436,6 +41753,7 @@
         "forms": [
             {
                 "formName": "Normal Forme",
+                "formKey": "normal",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.7,
@@ -41456,11 +41774,11 @@
                 "catchRate": 3,
                 "baseFriendship": 0,
                 "baseExp": 270,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Attack Forme",
+                "formKey": "attack",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.7,
@@ -41484,6 +41802,7 @@
             },
             {
                 "formName": "Defense Forme",
+                "formKey": "defense",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.7,
@@ -41507,6 +41826,7 @@
             },
             {
                 "formName": "Speed Forme",
+                "formKey": "speed",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 1.7,
@@ -43905,6 +44225,7 @@
         "forms": [
             {
                 "formName": "Plant Cloak",
+                "formKey": "plant",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.2,
@@ -43924,10 +44245,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 70,
-                "baseExp": 45
+                "baseExp": 45,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sandy Cloak",
+                "formKey": "sandy",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.2,
@@ -43947,10 +44270,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 70,
-                "baseExp": 45
+                "baseExp": 45,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Trash Cloak",
+                "formKey": "trash",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.2,
@@ -43970,7 +44295,8 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 70,
-                "baseExp": 45
+                "baseExp": 45,
+                "genderDiffs": "false"
             }
         ],
         "cost": 1,
@@ -44044,6 +44370,7 @@
         "forms": [
             {
                 "formName": "Plant Cloak",
+                "formKey": "plant",
                 "type1": "Bug",
                 "type2": "Grass",
                 "height": 0.5,
@@ -44067,6 +44394,7 @@
             },
             {
                 "formName": "Sandy Cloak",
+                "formKey": "sandy",
                 "type1": "Bug",
                 "type2": "Ground",
                 "height": 0.5,
@@ -44090,6 +44418,7 @@
             },
             {
                 "formName": "Trash Cloak",
+                "formKey": "trash",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 0.5,
@@ -44901,6 +45230,7 @@
         "forms": [
             {
                 "formName": "Overcast Form",
+                "formKey": "overcast",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 0.5,
@@ -44924,6 +45254,7 @@
             },
             {
                 "formName": "Sunshine Form",
+                "formKey": "sunshine",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 0.5,
@@ -45039,6 +45370,7 @@
         "forms": [
             {
                 "formName": "East Sea",
+                "formKey": "east",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.3,
@@ -45059,10 +45391,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 65
+                "baseExp": 65,
+                "genderDiffs": "false"
             },
             {
                 "formName": "West Sea",
+                "formKey": "west",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.3,
@@ -45083,7 +45417,8 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 65
+                "baseExp": 65,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -45182,6 +45517,7 @@
         "forms": [
             {
                 "formName": "East Sea",
+                "formKey": "east",
                 "type1": "Water",
                 "type2": "Ground",
                 "height": 0.9,
@@ -45206,6 +45542,7 @@
             },
             {
                 "formName": "West Sea",
+                "formKey": "west",
                 "type1": "Water",
                 "type2": "Ground",
                 "height": 0.9,
@@ -45732,6 +46069,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Normal",
                 "type2": "Fighting",
                 "height": 1.3,
@@ -47419,6 +47757,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 1.9,
@@ -47763,6 +48102,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Fighting",
                 "type2": "Steel",
                 "height": 1.3,
@@ -49057,6 +49397,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Grass",
                 "type2": "Ice",
                 "height": 2.7,
@@ -50646,6 +50987,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Psychic",
                 "type2": "Fighting",
                 "height": 1.6,
@@ -51181,6 +51523,7 @@
         "forms": [
             {
                 "formName": "Heat",
+                "formKey": "heat",
                 "type1": "Electric",
                 "type2": "Fire",
                 "height": 0.3,
@@ -51200,10 +51543,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Wash",
+                "formKey": "wash",
                 "type1": "Electric",
                 "type2": "Water",
                 "height": 0.3,
@@ -51223,10 +51568,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Frost",
+                "formKey": "frost",
                 "type1": "Electric",
                 "type2": "Ice",
                 "height": 0.3,
@@ -51246,10 +51593,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Fan",
+                "formKey": "fan",
                 "type1": "Electric",
                 "type2": "Flying",
                 "height": 0.3,
@@ -51269,10 +51618,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Mow",
+                "formKey": "mow",
                 "type1": "Electric",
                 "type2": "Grass",
                 "height": 0.3,
@@ -51292,7 +51643,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             }
         ],
         "cost": 5,
@@ -51707,6 +52059,7 @@
         "forms": [
             {
                 "formName": "Origin Forme",
+                "formKey": "origin",
                 "type1": "Steel",
                 "type2": "Dragon",
                 "height": 7.0,
@@ -51832,6 +52185,7 @@
         "forms": [
             {
                 "formName": "Origin Forme",
+                "formKey": "origin",
                 "type1": "Water",
                 "type2": "Dragon",
                 "height": 6.3,
@@ -52171,6 +52525,7 @@
         "forms": [
             {
                 "formName": "Altered Forme",
+                "formKey": "altered",
                 "type1": "Ghost",
                 "type2": "Dragon",
                 "height": 4.5,
@@ -52190,10 +52545,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 340
+                "baseExp": 340,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Origin Forme",
+                "formKey": "origin",
                 "type1": "Ghost",
                 "type2": "Dragon",
                 "height": 6.9,
@@ -52442,11 +52799,7 @@
         "levelMoves": [
             [
                 1,
-                "Bubble"
-            ],
-            [
-                1,
-                "Water Sport"
+                "Water Gun"
             ],
             [
                 9,
@@ -52483,6 +52836,10 @@
             [
                 69,
                 "Rain Dance"
+            ],
+            [
+                75,
+                "Take Heart"
             ]
         ],
         "eggMoves": [
@@ -52533,7 +52890,7 @@
         "levelMoves": [
             [
                 1,
-                "Bubble"
+                "Heart Swap"
             ],
             [
                 1,
@@ -52541,7 +52898,7 @@
             ],
             [
                 1,
-                "Water Sport"
+                "Water Gun"
             ],
             [
                 9,
@@ -52581,7 +52938,7 @@
             ],
             [
                 76,
-                "Heart Swap"
+                "Take Heart"
             ]
         ],
         "eggMoves": [
@@ -52723,6 +53080,7 @@
         "forms": [
             {
                 "formName": "Land Forme",
+                "formKey": "land",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 0.2,
@@ -52742,10 +53100,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 100,
-                "baseExp": 270
+                "baseExp": 270,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sky Forme",
+                "formKey": "sky",
                 "type1": "Grass",
                 "type2": "Flying",
                 "height": 0.4,
@@ -52871,6 +53231,7 @@
         "forms": [
             {
                 "formName": "Fighting",
+                "formKey": "fighting",
                 "type1": "Fighting",
                 "type2": "null",
                 "height": 3.2,
@@ -52894,6 +53255,7 @@
             },
             {
                 "formName": "Flying",
+                "formKey": "flying",
                 "type1": "Flying",
                 "type2": "null",
                 "height": 3.2,
@@ -52917,6 +53279,7 @@
             },
             {
                 "formName": "Poison",
+                "formKey": "poison",
                 "type1": "Poison",
                 "type2": "null",
                 "height": 3.2,
@@ -52940,6 +53303,7 @@
             },
             {
                 "formName": "Ground",
+                "formKey": "ground",
                 "type1": "Ground",
                 "type2": "null",
                 "height": 3.2,
@@ -52963,6 +53327,7 @@
             },
             {
                 "formName": "Rock",
+                "formKey": "rock",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 3.2,
@@ -52986,6 +53351,7 @@
             },
             {
                 "formName": "Bug",
+                "formKey": "bug",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 3.2,
@@ -53009,6 +53375,7 @@
             },
             {
                 "formName": "Ghost",
+                "formKey": "ghost",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 3.2,
@@ -53032,6 +53399,7 @@
             },
             {
                 "formName": "Steel",
+                "formKey": "steel",
                 "type1": "Steel",
                 "type2": "null",
                 "height": 3.2,
@@ -53055,6 +53423,7 @@
             },
             {
                 "formName": "Fire",
+                "formKey": "fire",
                 "type1": "Fire",
                 "type2": "null",
                 "height": 3.2,
@@ -53078,6 +53447,7 @@
             },
             {
                 "formName": "Water",
+                "formKey": "water",
                 "type1": "Water",
                 "type2": "null",
                 "height": 3.2,
@@ -53101,6 +53471,7 @@
             },
             {
                 "formName": "Grass",
+                "formKey": "grass",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 3.2,
@@ -53124,6 +53495,7 @@
             },
             {
                 "formName": "Electric",
+                "formKey": "electric",
                 "type1": "Electric",
                 "type2": "null",
                 "height": 3.2,
@@ -53147,6 +53519,7 @@
             },
             {
                 "formName": "Psychic",
+                "formKey": "psychic",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 3.2,
@@ -53170,6 +53543,7 @@
             },
             {
                 "formName": "Ice",
+                "formKey": "ice",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 3.2,
@@ -53193,6 +53567,7 @@
             },
             {
                 "formName": "Dragon",
+                "formKey": "dragon",
                 "type1": "Dragon",
                 "type2": "null",
                 "height": 3.2,
@@ -53216,6 +53591,7 @@
             },
             {
                 "formName": "Dark",
+                "formKey": "dark",
                 "type1": "Dark",
                 "type2": "null",
                 "height": 3.2,
@@ -53239,6 +53615,7 @@
             },
             {
                 "formName": "Fairy",
+                "formKey": "fairy",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 3.2,
@@ -53262,6 +53639,7 @@
             },
             {
                 "formName": "???",
+                "formKey": "unknown",
                 "type1": "Unknown",
                 "type2": "null",
                 "height": 3.2,
@@ -56905,6 +57283,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Normal",
                 "type2": "Fairy",
                 "height": 1.5,
@@ -58837,6 +59216,7 @@
         "forms": [
             {
                 "formName": "Red-Striped Form",
+                "formKey": "red-striped",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.0,
@@ -58857,10 +59237,12 @@
                 },
                 "catchRate": 25,
                 "baseFriendship": 50,
-                "baseExp": 161
+                "baseExp": 161,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blue-Striped Form",
+                "formKey": "blue-striped",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.0,
@@ -58881,10 +59263,12 @@
                 },
                 "catchRate": 25,
                 "baseFriendship": 50,
-                "baseExp": 161
+                "baseExp": 161,
+                "genderDiffs": "false"
             },
             {
                 "formName": "White-Striped Form",
+                "formKey": "white-striped",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.0,
@@ -58905,7 +59289,8 @@
                 },
                 "catchRate": 25,
                 "baseFriendship": 50,
-                "baseExp": 161
+                "baseExp": 161,
+                "genderDiffs": "false"
             }
         ],
         "cost": 4,
@@ -59424,6 +59809,7 @@
         "forms": [
             {
                 "formName": "Standard Mode",
+                "formKey": "",
                 "type1": "Fire",
                 "type2": "null",
                 "height": 1.3,
@@ -59447,6 +59833,7 @@
             },
             {
                 "formName": "Zen Mode",
+                "formKey": "zen",
                 "type1": "Fire",
                 "type2": "Psychic",
                 "height": 1.3,
@@ -60979,6 +61366,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Poison",
                 "type2": "null",
                 "height": 21.0,
@@ -62630,6 +63018,7 @@
         "forms": [
             {
                 "formName": "Spring Form",
+                "formKey": "spring",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 0.6,
@@ -62650,10 +63039,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 70,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Summer Form",
+                "formKey": "summer",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 0.6,
@@ -62674,10 +63065,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 70,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Autumn Form",
+                "formKey": "autumn",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 0.6,
@@ -62698,10 +63091,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 70,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Winter Form",
+                "formKey": "winter",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 0.6,
@@ -62722,7 +63117,8 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 70,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -62829,6 +63225,7 @@
         "forms": [
             {
                 "formName": "Spring Form",
+                "formKey": "spring",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 1.9,
@@ -62853,6 +63250,7 @@
             },
             {
                 "formName": "Summer Form",
+                "formKey": "summer",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 1.9,
@@ -62877,6 +63275,7 @@
             },
             {
                 "formName": "Autumn Form",
+                "formKey": "autumn",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 1.9,
@@ -62901,6 +63300,7 @@
             },
             {
                 "formName": "Winter Form",
+                "formKey": "winter",
                 "type1": "Normal",
                 "type2": "Grass",
                 "height": 1.9,
@@ -68615,6 +69015,7 @@
         "forms": [
             {
                 "formName": "Incarnate Forme",
+                "formKey": "incarnate",
                 "type1": "Flying",
                 "type2": "null",
                 "height": 1.5,
@@ -68634,10 +69035,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 90,
-                "baseExp": 290
+                "baseExp": 290,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Therian Forme",
+                "formKey": "therian",
                 "type1": "Flying",
                 "type2": "null",
                 "height": 1.4,
@@ -68779,6 +69182,7 @@
         "forms": [
             {
                 "formName": "Incarnate Forme",
+                "formKey": "incarnate",
                 "type1": "Electric",
                 "type2": "Flying",
                 "height": 1.5,
@@ -68798,10 +69202,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 90,
-                "baseExp": 290
+                "baseExp": 290,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Therian Forme",
+                "formKey": "therian",
                 "type1": "Electric",
                 "type2": "Flying",
                 "height": 3.0,
@@ -69161,6 +69567,7 @@
         "forms": [
             {
                 "formName": "Incarnate Forme",
+                "formKey": "incarnate",
                 "type1": "Ground",
                 "type2": "Flying",
                 "height": 1.5,
@@ -69180,10 +69587,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 90,
-                "baseExp": 300
+                "baseExp": 300,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Therian Forme",
+                "formKey": "therian",
                 "type1": "Ground",
                 "type2": "Flying",
                 "height": 1.3,
@@ -69325,6 +69734,7 @@
         "forms": [
             {
                 "formName": "Black",
+                "formKey": "black",
                 "type1": "Dragon",
                 "type2": "Ice",
                 "height": 3.3,
@@ -69348,6 +69758,7 @@
             },
             {
                 "formName": "White",
+                "formKey": "white",
                 "type1": "Dragon",
                 "type2": "Ice",
                 "height": 3.6,
@@ -69481,6 +69892,7 @@
         "forms": [
             {
                 "formName": "Ordinary Form",
+                "formKey": "ordinary",
                 "type1": "Water",
                 "type2": "Fighting",
                 "height": 1.4,
@@ -69504,6 +69916,7 @@
             },
             {
                 "formName": "Resolute",
+                "formKey": "resolute",
                 "type1": "Water",
                 "type2": "Fighting",
                 "height": 1.4,
@@ -69637,6 +70050,7 @@
         "forms": [
             {
                 "formName": "Aria Forme",
+                "formKey": "aria",
                 "type1": "Normal",
                 "type2": "Psychic",
                 "height": 0.6,
@@ -69656,10 +70070,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 100,
-                "baseExp": 270
+                "baseExp": 270,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Pirouette Forme",
+                "formKey": "pirouette",
                 "type1": "Normal",
                 "type2": "Fighting",
                 "height": 0.6,
@@ -69793,6 +70209,7 @@
         "forms": [
             {
                 "formName": "Shock Drive",
+                "formKey": "shock",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 1.5,
@@ -69816,6 +70233,7 @@
             },
             {
                 "formName": "Burn Drive",
+                "formKey": "burn",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 1.5,
@@ -69839,6 +70257,7 @@
             },
             {
                 "formName": "Chill Drive",
+                "formKey": "chill",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 1.5,
@@ -69862,6 +70281,7 @@
             },
             {
                 "formName": "Douse Drive",
+                "formKey": "douse",
                 "type1": "Bug",
                 "type2": "Steel",
                 "height": 1.5,
@@ -70601,6 +71021,7 @@
         "forms": [
             {
                 "formName": "Battle Bond",
+                "formKey": "battle-bond",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.3,
@@ -70621,8 +71042,7 @@
                 "catchRate": 45,
                 "baseFriendship": 70,
                 "baseExp": 63,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -70732,6 +71152,7 @@
         "forms": [
             {
                 "formName": "Battle Bond",
+                "formKey": "battle-bond",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.6,
@@ -70752,8 +71173,7 @@
                 "catchRate": 45,
                 "baseFriendship": 70,
                 "baseExp": 142,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -70848,6 +71268,7 @@
         "forms": [
             {
                 "formName": "Battle Bond",
+                "formKey": "battle-bond",
                 "type1": "Water",
                 "type2": "Dark",
                 "height": 1.5,
@@ -70868,11 +71289,11 @@
                 "catchRate": 45,
                 "baseFriendship": 70,
                 "baseExp": 239,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Ash",
+                "formKey": "ash",
                 "type1": "Water",
                 "type2": "Dark",
                 "height": 1.5,
@@ -71496,6 +71917,7 @@
         "forms": [
             {
                 "formName": "Meadow Pattern",
+                "formKey": "meadow",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71517,11 +71939,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Icy Snow Pattern",
+                "formKey": "icy-snow",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71543,11 +71965,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Polar Pattern",
+                "formKey": "polar",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71569,11 +71991,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Tundra Pattern",
+                "formKey": "tundra",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71595,11 +72017,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Continental Pattern",
+                "formKey": "continental",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71621,11 +72043,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Garden Pattern",
+                "formKey": "garden",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71647,11 +72069,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Elegant Pattern",
+                "formKey": "elegant",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71673,11 +72095,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Modern Pattern",
+                "formKey": "modern",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71699,11 +72121,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Marine Pattern",
+                "formKey": "marine",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71725,11 +72147,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Archipelago Pattern",
+                "formKey": "archipelago",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71751,11 +72173,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "High Plains Pattern",
+                "formKey": "high-plains",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71777,11 +72199,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sandstorm Pattern",
+                "formKey": "sandstorm",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71803,11 +72225,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "River Pattern",
+                "formKey": "river",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71829,11 +72251,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Monsoon Pattern",
+                "formKey": "monsoon",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71855,11 +72277,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Savanna Pattern",
+                "formKey": "savanna",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71881,11 +72303,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sun Pattern",
+                "formKey": "sun",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71907,11 +72329,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Ocean Pattern",
+                "formKey": "ocean",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71933,11 +72355,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Jungle Pattern",
+                "formKey": "jungle",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71959,11 +72381,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Fancy Pattern",
+                "formKey": "fancy",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -71985,11 +72407,11 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Poké Ball Pattern",
+                "formKey": "poke-ball",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72011,8 +72433,7 @@
                 "catchRate": 255,
                 "baseFriendship": 70,
                 "baseExp": 40,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "cost": 1,
@@ -72082,6 +72503,7 @@
         "forms": [
             {
                 "formName": "Meadow Pattern",
+                "formKey": "meadow",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72102,11 +72524,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Icy Snow Pattern",
+                "formKey": "icy-snow",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72127,11 +72549,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Polar Pattern",
+                "formKey": "polar",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72152,11 +72574,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Tundra Pattern",
+                "formKey": "tundra",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72177,11 +72599,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Continental Pattern",
+                "formKey": "continental",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72202,11 +72624,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Garden Pattern",
+                "formKey": "garden",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72227,11 +72649,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Elegant Pattern",
+                "formKey": "elegant",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72252,11 +72674,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Modern Pattern",
+                "formKey": "modern",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72277,11 +72699,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Marine Pattern",
+                "formKey": "marine",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72302,11 +72724,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Archipelago Pattern",
+                "formKey": "archipelago",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72327,11 +72749,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "High Plains Pattern",
+                "formKey": "high-plains",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72352,11 +72774,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sandstorm Pattern",
+                "formKey": "sandstorm",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72377,11 +72799,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "River Pattern",
+                "formKey": "river",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72402,11 +72824,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Monsoon Pattern",
+                "formKey": "monsoon",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72427,11 +72849,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Savanna Pattern",
+                "formKey": "savanna",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72452,11 +72874,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sun Pattern",
+                "formKey": "sun",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72477,11 +72899,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Ocean Pattern",
+                "formKey": "ocean",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72502,11 +72924,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Jungle Pattern",
+                "formKey": "jungle",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72527,11 +72949,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Fancy Pattern",
+                "formKey": "fancy",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72552,11 +72974,11 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Poké Ball Pattern",
+                "formKey": "poke-ball",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 0.3,
@@ -72577,8 +72999,7 @@
                 "catchRate": 120,
                 "baseFriendship": 70,
                 "baseExp": 75,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -72626,6 +73047,7 @@
         "forms": [
             {
                 "formName": "Meadow Pattern",
+                "formKey": "meadow",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72650,6 +73072,7 @@
             },
             {
                 "formName": "Icy Snow Pattern",
+                "formKey": "icy-snow",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72674,6 +73097,7 @@
             },
             {
                 "formName": "Polar Pattern",
+                "formKey": "polar",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72698,6 +73122,7 @@
             },
             {
                 "formName": "Tundra Pattern",
+                "formKey": "tundra",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72722,6 +73147,7 @@
             },
             {
                 "formName": "Continental Pattern",
+                "formKey": "continental",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72746,6 +73172,7 @@
             },
             {
                 "formName": "Garden Pattern",
+                "formKey": "garden",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72770,6 +73197,7 @@
             },
             {
                 "formName": "Elegant Pattern",
+                "formKey": "elegant",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72794,6 +73222,7 @@
             },
             {
                 "formName": "Modern Pattern",
+                "formKey": "modern",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72818,6 +73247,7 @@
             },
             {
                 "formName": "Marine Pattern",
+                "formKey": "marine",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72842,6 +73272,7 @@
             },
             {
                 "formName": "Archipelago Pattern",
+                "formKey": "archipelago",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72866,6 +73297,7 @@
             },
             {
                 "formName": "High Plains Pattern",
+                "formKey": "high-plains",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72890,6 +73322,7 @@
             },
             {
                 "formName": "Sandstorm Pattern",
+                "formKey": "sandstorm",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72914,6 +73347,7 @@
             },
             {
                 "formName": "River Pattern",
+                "formKey": "river",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72938,6 +73372,7 @@
             },
             {
                 "formName": "Monsoon Pattern",
+                "formKey": "monsoon",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72962,6 +73397,7 @@
             },
             {
                 "formName": "Savanna Pattern",
+                "formKey": "savanna",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -72986,6 +73422,7 @@
             },
             {
                 "formName": "Sun Pattern",
+                "formKey": "sun",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -73010,6 +73447,7 @@
             },
             {
                 "formName": "Ocean Pattern",
+                "formKey": "ocean",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -73034,6 +73472,7 @@
             },
             {
                 "formName": "Jungle Pattern",
+                "formKey": "jungle",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -73058,6 +73497,7 @@
             },
             {
                 "formName": "Fancy Pattern",
+                "formKey": "fancy",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -73082,6 +73522,7 @@
             },
             {
                 "formName": "Poké Ball Pattern",
+                "formKey": "poke-ball",
                 "type1": "Bug",
                 "type2": "Flying",
                 "height": 1.2,
@@ -73402,6 +73843,7 @@
         "forms": [
             {
                 "formName": "Red Flower",
+                "formKey": "red",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.1,
@@ -73421,10 +73863,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 61
+                "baseExp": 61,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Yellow Flower",
+                "formKey": "yellow",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.1,
@@ -73444,10 +73888,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 61
+                "baseExp": 61,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Orange Flower",
+                "formKey": "orange",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.1,
@@ -73467,10 +73913,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 61
+                "baseExp": 61,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blue Flower",
+                "formKey": "blue",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.1,
@@ -73490,10 +73938,12 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 61
+                "baseExp": 61,
+                "genderDiffs": "false"
             },
             {
                 "formName": "White Flower",
+                "formKey": "white",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.1,
@@ -73513,7 +73963,8 @@
                 },
                 "catchRate": 225,
                 "baseFriendship": 70,
-                "baseExp": 61
+                "baseExp": 61,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -73623,6 +74074,7 @@
         "forms": [
             {
                 "formName": "Red Flower",
+                "formKey": "red",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.2,
@@ -73646,6 +74098,7 @@
             },
             {
                 "formName": "Yellow Flower",
+                "formKey": "yellow",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.2,
@@ -73669,6 +74122,7 @@
             },
             {
                 "formName": "Orange Flower",
+                "formKey": "orange",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.2,
@@ -73692,6 +74146,7 @@
             },
             {
                 "formName": "Blue Flower",
+                "formKey": "blue",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.2,
@@ -73715,6 +74170,7 @@
             },
             {
                 "formName": "White Flower",
+                "formKey": "white",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.2,
@@ -73829,6 +74285,7 @@
         "forms": [
             {
                 "formName": "Red Flower",
+                "formKey": "red",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 1.1,
@@ -73852,6 +74309,7 @@
             },
             {
                 "formName": "Yellow Flower",
+                "formKey": "yellow",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 1.1,
@@ -73875,6 +74333,7 @@
             },
             {
                 "formName": "Orange Flower",
+                "formKey": "orange",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 1.1,
@@ -73898,6 +74357,7 @@
             },
             {
                 "formName": "Blue Flower",
+                "formKey": "blue",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 1.1,
@@ -73921,6 +74381,7 @@
             },
             {
                 "formName": "White Flower",
+                "formKey": "white",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 1.1,
@@ -74439,6 +74900,7 @@
         "forms": [
             {
                 "formName": "Natural Form",
+                "formKey": "",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74458,10 +74920,12 @@
                 },
                 "catchRate": 160,
                 "baseFriendship": 70,
-                "baseExp": 165
+                "baseExp": 165,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Heart Trim",
+                "formKey": "heart",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74486,6 +74950,7 @@
             },
             {
                 "formName": "Star Trim",
+                "formKey": "star",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74510,6 +74975,7 @@
             },
             {
                 "formName": "Diamond Trim",
+                "formKey": "diamond",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74534,6 +75000,7 @@
             },
             {
                 "formName": "Debutante Trim",
+                "formKey": "debutante",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74558,6 +75025,7 @@
             },
             {
                 "formName": "Matron Trim",
+                "formKey": "matron",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74582,6 +75050,7 @@
             },
             {
                 "formName": "Dandy Trim",
+                "formKey": "dandy",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74606,6 +75075,7 @@
             },
             {
                 "formName": "La Reine Trim",
+                "formKey": "la-reine",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74630,6 +75100,7 @@
             },
             {
                 "formName": "Kabuki Trim",
+                "formKey": "kabuki",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74654,6 +75125,7 @@
             },
             {
                 "formName": "Pharaoh Trim",
+                "formKey": "pharaoh",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.2,
@@ -74869,6 +75341,7 @@
         "forms": [
             {
                 "formName": "Male",
+                "formKey": "male",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.6,
@@ -74890,11 +75363,11 @@
                 "catchRate": 75,
                 "baseFriendship": 50,
                 "baseExp": 163,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Female",
+                "formKey": "female",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 0.6,
@@ -75222,6 +75695,7 @@
         "forms": [
             {
                 "formName": "Shield Forme",
+                "formKey": "shield",
                 "type1": "Steel",
                 "type2": "Ghost",
                 "height": 1.7,
@@ -75242,11 +75716,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 250,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blade Forme",
+                "formKey": "blade",
                 "type1": "Steel",
                 "type2": "Ghost",
                 "height": 1.7,
@@ -75266,7 +75740,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 250
+                "baseExp": 250,
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -78222,6 +78697,7 @@
         "forms": [
             {
                 "formName": "Average Size",
+                "formKey": "",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.4,
@@ -78242,10 +78718,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Small Size",
+                "formKey": "small",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.3,
@@ -78266,10 +78744,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Large Size",
+                "formKey": "large",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.5,
@@ -78290,10 +78770,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Super Size",
+                "formKey": "super",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.8,
@@ -78314,7 +78796,8 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 67
+                "baseExp": 67,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -78425,6 +78908,7 @@
         "forms": [
             {
                 "formName": "Average Size",
+                "formKey": "",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.9,
@@ -78449,6 +78933,7 @@
             },
             {
                 "formName": "Small Size",
+                "formKey": "small",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 0.7,
@@ -78473,6 +78958,7 @@
             },
             {
                 "formName": "Large Size",
+                "formKey": "large",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 1.1,
@@ -78497,6 +78983,7 @@
             },
             {
                 "formName": "Super Size",
+                "formKey": "super",
                 "type1": "Ghost",
                 "type2": "Grass",
                 "height": 1.7,
@@ -79054,6 +79541,7 @@
         "forms": [
             {
                 "formName": "Neutral Mode",
+                "formKey": "neutral",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 3.0,
@@ -79073,10 +79561,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 0,
-                "baseExp": 340
+                "baseExp": 340,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Active Mode",
+                "formKey": "active",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 3.0,
@@ -79353,6 +79843,7 @@
         "forms": [
             {
                 "formName": "50% Forme",
+                "formKey": "50",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 5.0,
@@ -79373,11 +79864,11 @@
                 "catchRate": 3,
                 "baseFriendship": 0,
                 "baseExp": 300,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "10% Forme",
+                "formKey": "10",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 1.2,
@@ -79397,10 +79888,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 300
+                "baseExp": 300,
+                "genderDiffs": "false"
             },
             {
                 "formName": "50% Forme Power Construct",
+                "formKey": "50-pc",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 5.0,
@@ -79421,11 +79914,11 @@
                 "catchRate": 3,
                 "baseFriendship": 0,
                 "baseExp": 300,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "10% Forme Power Construct",
+                "formKey": "10-pc",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 1.2,
@@ -79446,11 +79939,11 @@
                 "catchRate": 3,
                 "baseFriendship": 0,
                 "baseExp": 300,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"10\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Complete Forme",
+                "formKey": "complete",
                 "type1": "Dragon",
                 "type2": "Ground",
                 "height": 4.5,
@@ -79596,6 +80089,7 @@
         "forms": [
             {
                 "formName": "Mega",
+                "formKey": "mega",
                 "type1": "Rock",
                 "type2": "Fairy",
                 "height": 1.1,
@@ -79729,6 +80223,7 @@
         "forms": [
             {
                 "formName": "Hoopa Confined",
+                "formKey": "",
                 "type1": "Psychic",
                 "type2": "Ghost",
                 "height": 0.5,
@@ -79752,6 +80247,7 @@
             },
             {
                 "formName": "Hoopa Unbound",
+                "formKey": "unbound",
                 "type1": "Psychic",
                 "type2": "Dark",
                 "height": 6.5,
@@ -81848,6 +82344,7 @@
         "forms": [
             {
                 "formName": "Baile Style",
+                "formKey": "baile",
                 "type1": "Fire",
                 "type2": "Flying",
                 "height": 0.6,
@@ -81868,11 +82365,11 @@
                 "catchRate": 45,
                 "baseFriendship": 70,
                 "baseExp": 167,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Pom-Pom Style",
+                "formKey": "pompom",
                 "type1": "Electric",
                 "type2": "Flying",
                 "height": 0.6,
@@ -81892,10 +82389,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 70,
-                "baseExp": 167
+                "baseExp": 167,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Pau Style",
+                "formKey": "pau",
                 "type1": "Psychic",
                 "type2": "Flying",
                 "height": 0.6,
@@ -81915,10 +82414,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 70,
-                "baseExp": 167
+                "baseExp": 167,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sensu Style",
+                "formKey": "sensu",
                 "type1": "Ghost",
                 "type2": "Flying",
                 "height": 0.6,
@@ -81938,7 +82439,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 70,
-                "baseExp": 167
+                "baseExp": 167,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -82226,6 +82728,7 @@
         "forms": [
             {
                 "formName": "Own Tempo",
+                "formKey": "own-tempo",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 0.5,
@@ -82246,8 +82749,7 @@
                 "catchRate": 190,
                 "baseFriendship": 50,
                 "baseExp": 56,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -82358,6 +82860,7 @@
         "forms": [
             {
                 "formName": "Midday Form",
+                "formKey": "midday",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 0.8,
@@ -82379,11 +82882,11 @@
                 "catchRate": 90,
                 "baseFriendship": 50,
                 "baseExp": 170,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Midnight Form",
+                "formKey": "midnight",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 1.1,
@@ -82408,6 +82911,7 @@
             },
             {
                 "formName": "Dusk Form",
+                "formKey": "dusk",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 0.8,
@@ -82538,6 +83042,7 @@
         "forms": [
             {
                 "formName": "Solo Form",
+                "formKey": "",
                 "type1": "Water",
                 "type2": "null",
                 "height": 0.2,
@@ -82561,6 +83066,7 @@
             },
             {
                 "formName": "School",
+                "formKey": "school",
                 "type1": "Water",
                 "type2": "null",
                 "height": 8.2,
@@ -85208,6 +85714,7 @@
         "forms": [
             {
                 "formName": "Type: Normal",
+                "formKey": "normal",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 2.3,
@@ -85228,11 +85735,11 @@
                 "catchRate": 3,
                 "baseFriendship": 0,
                 "baseExp": 285,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Type: Fighting",
+                "formKey": "fighting",
                 "type1": "Fighting",
                 "type2": "null",
                 "height": 2.3,
@@ -85256,6 +85763,7 @@
             },
             {
                 "formName": "Type: Flying",
+                "formKey": "flying",
                 "type1": "Flying",
                 "type2": "null",
                 "height": 2.3,
@@ -85279,6 +85787,7 @@
             },
             {
                 "formName": "Type: Poison",
+                "formKey": "poison",
                 "type1": "Poison",
                 "type2": "null",
                 "height": 2.3,
@@ -85302,6 +85811,7 @@
             },
             {
                 "formName": "Type: Ground",
+                "formKey": "ground",
                 "type1": "Ground",
                 "type2": "null",
                 "height": 2.3,
@@ -85325,6 +85835,7 @@
             },
             {
                 "formName": "Type: Rock",
+                "formKey": "rock",
                 "type1": "Rock",
                 "type2": "null",
                 "height": 2.3,
@@ -85348,6 +85859,7 @@
             },
             {
                 "formName": "Type: Bug",
+                "formKey": "bug",
                 "type1": "Bug",
                 "type2": "null",
                 "height": 2.3,
@@ -85371,6 +85883,7 @@
             },
             {
                 "formName": "Type: Ghost",
+                "formKey": "ghost",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 2.3,
@@ -85394,6 +85907,7 @@
             },
             {
                 "formName": "Type: Steel",
+                "formKey": "steel",
                 "type1": "Steel",
                 "type2": "null",
                 "height": 2.3,
@@ -85417,6 +85931,7 @@
             },
             {
                 "formName": "Type: Fire",
+                "formKey": "fire",
                 "type1": "Fire",
                 "type2": "null",
                 "height": 2.3,
@@ -85440,6 +85955,7 @@
             },
             {
                 "formName": "Type: Water",
+                "formKey": "water",
                 "type1": "Water",
                 "type2": "null",
                 "height": 2.3,
@@ -85463,6 +85979,7 @@
             },
             {
                 "formName": "Type: Grass",
+                "formKey": "grass",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 2.3,
@@ -85486,6 +86003,7 @@
             },
             {
                 "formName": "Type: Electric",
+                "formKey": "electric",
                 "type1": "Electric",
                 "type2": "null",
                 "height": 2.3,
@@ -85509,6 +86027,7 @@
             },
             {
                 "formName": "Type: Psychic",
+                "formKey": "psychic",
                 "type1": "Psychic",
                 "type2": "null",
                 "height": 2.3,
@@ -85532,6 +86051,7 @@
             },
             {
                 "formName": "Type: Ice",
+                "formKey": "ice",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 2.3,
@@ -85555,6 +86075,7 @@
             },
             {
                 "formName": "Type: Dragon",
+                "formKey": "dragon",
                 "type1": "Dragon",
                 "type2": "null",
                 "height": 2.3,
@@ -85578,6 +86099,7 @@
             },
             {
                 "formName": "Type: Dark",
+                "formKey": "dark",
                 "type1": "Dark",
                 "type2": "null",
                 "height": 2.3,
@@ -85601,6 +86123,7 @@
             },
             {
                 "formName": "Type: Fairy",
+                "formKey": "fairy",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 2.3,
@@ -85751,6 +86274,7 @@
         "forms": [
             {
                 "formName": "Red Meteor Form",
+                "formKey": "red-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85771,11 +86295,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Orange Meteor Form",
+                "formKey": "orange-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85796,11 +86320,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Yellow Meteor Form",
+                "formKey": "yellow-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85821,11 +86345,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Green Meteor Form",
+                "formKey": "green-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85846,11 +86370,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blue Meteor Form",
+                "formKey": "blue-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85871,11 +86395,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Indigo Meteor Form",
+                "formKey": "indigo-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85896,11 +86420,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Violet Meteor Form",
+                "formKey": "violet-meteor",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85921,11 +86445,11 @@
                 "catchRate": 30,
                 "baseFriendship": 70,
                 "baseExp": 154,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Red Core Form",
+                "formKey": "red",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85945,10 +86469,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Orange Core Form",
+                "formKey": "orange",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85968,10 +86494,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Yellow Core Form",
+                "formKey": "yellow",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -85991,10 +86519,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Green Core Form",
+                "formKey": "green",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -86014,10 +86544,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blue Core Form",
+                "formKey": "blue",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -86037,10 +86569,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Indigo Core Form",
+                "formKey": "indigo",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -86060,10 +86594,12 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Violet Core Form",
+                "formKey": "violet",
                 "type1": "Rock",
                 "type2": "Flying",
                 "height": 0.3,
@@ -86083,7 +86619,8 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 70,
-                "baseExp": 154
+                "baseExp": 154,
+                "genderDiffs": "false"
             }
         ],
         "cost": 5,
@@ -86507,6 +87044,7 @@
         "forms": [
             {
                 "formName": "Disguised Form",
+                "formKey": "disguised",
                 "type1": "Ghost",
                 "type2": "Fairy",
                 "height": 0.2,
@@ -86527,11 +87065,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 167,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Busted Form",
+                "formKey": "busted",
                 "type1": "Ghost",
                 "type2": "Fairy",
                 "height": 0.2,
@@ -88842,6 +89380,7 @@
         "forms": [
             {
                 "formName": "Dusk Mane",
+                "formKey": "dusk-mane",
                 "type1": "Psychic",
                 "type2": "Steel",
                 "height": 3.8,
@@ -88865,6 +89404,7 @@
             },
             {
                 "formName": "Dawn Wings",
+                "formKey": "dawn-wings",
                 "type1": "Psychic",
                 "type2": "Ghost",
                 "height": 4.2,
@@ -88888,6 +89428,7 @@
             },
             {
                 "formName": "Ultra",
+                "formKey": "ultra",
                 "type1": "Psychic",
                 "type2": "Dragon",
                 "height": 7.5,
@@ -89033,6 +89574,7 @@
         "forms": [
             {
                 "formName": "Original",
+                "formKey": "original",
                 "type1": "Steel",
                 "type2": "Fairy",
                 "height": 1.0,
@@ -89052,7 +89594,8 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 300
+                "baseExp": 300,
+                "genderDiffs": "false"
             }
         ],
         "cost": 7,
@@ -89178,6 +89721,7 @@
         "forms": [
             {
                 "formName": "Zenith",
+                "formKey": "zenith",
                 "type1": "Fighting",
                 "type2": "Ghost",
                 "height": 0.7,
@@ -89946,6 +90490,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Steel",
                 "type2": "null",
                 "height": 25.0,
@@ -90235,6 +90780,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 28.0,
@@ -90524,6 +91070,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Fire",
                 "type2": "null",
                 "height": 27.0,
@@ -90805,6 +91352,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Water",
                 "type2": "null",
                 "height": 40.0,
@@ -91276,6 +91824,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Flying",
                 "type2": "Steel",
                 "height": 14.0,
@@ -91497,6 +92046,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Bug",
                 "type2": "Psychic",
                 "height": 14.0,
@@ -92240,6 +92790,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Water",
                 "type2": "Rock",
                 "height": 24.0,
@@ -92700,6 +93251,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Rock",
                 "type2": "Fire",
                 "height": 42.0,
@@ -92872,6 +93424,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Grass",
                 "type2": "Dragon",
                 "height": 24.0,
@@ -93000,6 +93553,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Grass",
                 "type2": "Dragon",
                 "height": 24.0,
@@ -93228,6 +93782,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Ground",
                 "type2": "null",
                 "height": 22.0,
@@ -93335,6 +93890,7 @@
         "forms": [
             {
                 "formName": "Gulping Form",
+                "formKey": "gulping",
                 "type1": "Flying",
                 "type2": "Water",
                 "height": 0.8,
@@ -93358,6 +93914,7 @@
             },
             {
                 "formName": "Gorging Form",
+                "formKey": "gorging",
                 "type1": "Flying",
                 "type2": "Water",
                 "height": 0.8,
@@ -93715,6 +94272,7 @@
         "forms": [
             {
                 "formName": "Amped Form",
+                "formKey": "amped",
                 "type1": "Electric",
                 "type2": "Poison",
                 "height": 1.6,
@@ -93736,11 +94294,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 176,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Low-Key Form",
+                "formKey": "lowkey",
                 "type1": "Electric",
                 "type2": "Poison",
                 "height": 1.6,
@@ -93765,6 +94323,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Electric",
                 "type2": "Poison",
                 "height": 24.0,
@@ -94017,6 +94576,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Fire",
                 "type2": "Bug",
                 "height": 75.0,
@@ -94311,6 +94871,7 @@
         "forms": [
             {
                 "formName": "Phony Form",
+                "formKey": "phony",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.1,
@@ -94331,11 +94892,11 @@
                 "catchRate": 120,
                 "baseFriendship": 50,
                 "baseExp": 62,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Antique Form",
+                "formKey": "antique",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.1,
@@ -94356,8 +94917,7 @@
                 "catchRate": 120,
                 "baseFriendship": 50,
                 "baseExp": 62,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -94459,6 +95019,7 @@
         "forms": [
             {
                 "formName": "Phony Form",
+                "formKey": "phony",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.2,
@@ -94479,11 +95040,11 @@
                 "catchRate": 60,
                 "baseFriendship": 50,
                 "baseExp": 178,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Antique Form",
+                "formKey": "antique",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.2,
@@ -94504,8 +95065,7 @@
                 "catchRate": 60,
                 "baseFriendship": 50,
                 "baseExp": 178,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -94778,6 +95338,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Psychic",
                 "type2": "Fairy",
                 "height": 26.0,
@@ -95083,6 +95644,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Dark",
                 "type2": "Fairy",
                 "height": 32.0,
@@ -95968,6 +96530,7 @@
         "forms": [
             {
                 "formName": "Vanilla Cream",
+                "formKey": "vanilla-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -95988,11 +96551,11 @@
                 "catchRate": 100,
                 "baseFriendship": 50,
                 "baseExp": 173,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Ruby Cream",
+                "formKey": "ruby-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96017,6 +96580,7 @@
             },
             {
                 "formName": "Matcha Cream",
+                "formKey": "matcha-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96041,6 +96605,7 @@
             },
             {
                 "formName": "Mint Cream",
+                "formKey": "mint-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96065,6 +96630,7 @@
             },
             {
                 "formName": "Lemon Cream",
+                "formKey": "lemon-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96089,6 +96655,7 @@
             },
             {
                 "formName": "Salted Cream",
+                "formKey": "salted-cream",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96113,6 +96680,7 @@
             },
             {
                 "formName": "Ruby Swirl",
+                "formKey": "ruby-swirl",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96137,6 +96705,7 @@
             },
             {
                 "formName": "Caramel Swirl",
+                "formKey": "caramel-swirl",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96161,6 +96730,7 @@
             },
             {
                 "formName": "Rainbow Swirl",
+                "formKey": "rainbow-swirl",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 0.3,
@@ -96185,6 +96755,7 @@
             },
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 30.0,
@@ -96759,6 +97330,7 @@
         "forms": [
             {
                 "formName": "Ice Face",
+                "formKey": "",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 1.4,
@@ -96782,6 +97354,7 @@
             },
             {
                 "formName": "No Ice",
+                "formKey": "no-ice",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 1.4,
@@ -96904,6 +97477,7 @@
         "forms": [
             {
                 "formName": "Male",
+                "formKey": "male",
                 "type1": "Psychic",
                 "type2": "Normal",
                 "height": 0.9,
@@ -96925,11 +97499,11 @@
                 "catchRate": 30,
                 "baseFriendship": 140,
                 "baseExp": 166,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Female",
+                "formKey": "female",
                 "type1": "Psychic",
                 "type2": "Normal",
                 "height": 0.9,
@@ -96950,7 +97524,8 @@
                 },
                 "catchRate": 30,
                 "baseFriendship": 140,
-                "baseExp": 166
+                "baseExp": 166,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -97056,6 +97631,7 @@
         "forms": [
             {
                 "formName": "Full Belly Mode",
+                "formKey": "full-belly",
                 "type1": "Electric",
                 "type2": "Dark",
                 "height": 0.3,
@@ -97076,11 +97652,11 @@
                 "catchRate": 180,
                 "baseFriendship": 50,
                 "baseExp": 153,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Hangry Mode",
+                "formKey": "hangry",
                 "type1": "Electric",
                 "type2": "Dark",
                 "height": 0.3,
@@ -97309,6 +97885,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Steel",
                 "type2": "null",
                 "height": 23.0,
@@ -97824,6 +98401,7 @@
         "forms": [
             {
                 "formName": "G-Max",
+                "formKey": "gigantamax",
                 "type1": "Steel",
                 "type2": "Dragon",
                 "height": 43.0,
@@ -98220,6 +98798,7 @@
         "forms": [
             {
                 "formName": "Hero of Many Battles",
+                "formKey": "hero",
                 "type1": "Fairy",
                 "type2": "null",
                 "height": 2.8,
@@ -98240,11 +98819,11 @@
                 "catchRate": 10,
                 "baseFriendship": 0,
                 "baseExp": 335,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Crowned",
+                "formKey": "crowned",
                 "type1": "Fairy",
                 "type2": "Steel",
                 "height": 2.8,
@@ -98374,6 +98953,7 @@
         "forms": [
             {
                 "formName": "Hero of Many Battles",
+                "formKey": "hero",
                 "type1": "Fighting",
                 "type2": "null",
                 "height": 2.9,
@@ -98394,11 +98974,11 @@
                 "catchRate": 10,
                 "baseFriendship": 0,
                 "baseExp": 335,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Crowned",
+                "formKey": "crowned",
                 "type1": "Fighting",
                 "type2": "Steel",
                 "height": 2.9,
@@ -98524,6 +99104,7 @@
         "forms": [
             {
                 "formName": "E-Max",
+                "formKey": "eternamax",
                 "type1": "Poison",
                 "type2": "Dragon",
                 "height": 100.0,
@@ -98758,6 +99339,7 @@
         "forms": [
             {
                 "formName": "Single Strike Style",
+                "formKey": "single-strike",
                 "type1": "Fighting",
                 "type2": "Dark",
                 "height": 1.9,
@@ -98778,11 +99360,11 @@
                 "catchRate": 3,
                 "baseFriendship": 50,
                 "baseExp": 275,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Rapid Strike Style",
+                "formKey": "rapid-strike",
                 "type1": "Fighting",
                 "type2": "Water",
                 "height": 1.9,
@@ -98806,6 +99388,7 @@
             },
             {
                 "formName": "G-Max Single Strike Style",
+                "formKey": "gigantamax-single",
                 "type1": "Fighting",
                 "type2": "Dark",
                 "height": 29.0,
@@ -98829,6 +99412,7 @@
             },
             {
                 "formName": "G-Max Rapid Strike Style",
+                "formKey": "gigantamax-rapid",
                 "type1": "Fighting",
                 "type2": "Water",
                 "height": 26.0,
@@ -98955,6 +99539,7 @@
         "forms": [
             {
                 "formName": "Dada",
+                "formKey": "dada",
                 "type1": "Dark",
                 "type2": "Grass",
                 "height": 1.8,
@@ -98974,7 +99559,8 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 300
+                "baseExp": 300,
+                "genderDiffs": "false"
             }
         ],
         "cost": 6,
@@ -99508,6 +100094,7 @@
         "forms": [
             {
                 "formName": "Ice",
+                "formKey": "ice",
                 "type1": "Psychic",
                 "type2": "Ice",
                 "height": 2.4,
@@ -99531,6 +100118,7 @@
             },
             {
                 "formName": "Shadow",
+                "formKey": "shadow",
                 "type1": "Psychic",
                 "type2": "Ghost",
                 "height": 2.4,
@@ -99956,6 +100544,7 @@
         "forms": [
             {
                 "formName": "Male",
+                "formKey": "male",
                 "type1": "Water",
                 "type2": "Ghost",
                 "height": 3.0,
@@ -99977,11 +100566,11 @@
                 "catchRate": 135,
                 "baseFriendship": 50,
                 "baseExp": 265,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Female",
+                "formKey": "female",
                 "type1": "Water",
                 "type2": "Ghost",
                 "height": 3.0,
@@ -100002,7 +100591,8 @@
                 },
                 "catchRate": 135,
                 "baseFriendship": 50,
-                "baseExp": 265
+                "baseExp": 265,
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -100307,6 +100897,7 @@
         "forms": [
             {
                 "formName": "Incarnate Forme",
+                "formKey": "incarnate",
                 "type1": "Fairy",
                 "type2": "Flying",
                 "height": 1.6,
@@ -100326,10 +100917,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 50,
-                "baseExp": 116
+                "baseExp": 116,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Therian Forme",
+                "formKey": "therian",
                 "type1": "Fairy",
                 "type2": "Flying",
                 "height": 1.6,
@@ -101445,6 +102038,7 @@
         "forms": [
             {
                 "formName": "Male",
+                "formKey": "male",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.0,
@@ -101466,11 +102060,11 @@
                 "catchRate": 100,
                 "baseFriendship": 50,
                 "baseExp": 171,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Female",
+                "formKey": "female",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.0,
@@ -102411,6 +103005,7 @@
         "forms": [
             {
                 "formName": "Family of Four",
+                "formKey": "four",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 0.3,
@@ -102435,6 +103030,7 @@
             },
             {
                 "formName": "Family of Three",
+                "formKey": "three",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 0.3,
@@ -103041,6 +103637,7 @@
         "forms": [
             {
                 "formName": "Green Plumage",
+                "formKey": "green-plumage",
                 "type1": "Normal",
                 "type2": "Flying",
                 "height": 0.6,
@@ -103061,10 +103658,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 146
+                "baseExp": 146,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blue Plumage",
+                "formKey": "blue-plumage",
                 "type1": "Normal",
                 "type2": "Flying",
                 "height": 0.6,
@@ -103085,10 +103684,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 146
+                "baseExp": 146,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Yellow Plumage",
+                "formKey": "yellow-plumage",
                 "type1": "Normal",
                 "type2": "Flying",
                 "height": 0.6,
@@ -103109,10 +103710,12 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 146
+                "baseExp": 146,
+                "genderDiffs": "false"
             },
             {
                 "formName": "White Plumage",
+                "formKey": "white-plumage",
                 "type1": "Normal",
                 "type2": "Flying",
                 "height": 0.6,
@@ -103133,7 +103736,8 @@
                 },
                 "catchRate": 190,
                 "baseFriendship": 50,
-                "baseExp": 146
+                "baseExp": 146,
+                "genderDiffs": "false"
             }
         ],
         "cost": 3,
@@ -106437,6 +107041,7 @@
         "forms": [
             {
                 "formName": "Zero Form",
+                "formKey": "zero",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.3,
@@ -106456,10 +107061,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 160
+                "baseExp": 160,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Hero Form",
+                "formKey": "hero",
                 "type1": "Water",
                 "type2": "null",
                 "height": 1.8,
@@ -106479,7 +107086,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 160
+                "baseExp": 160,
+                "genderDiffs": "false"
             }
         ],
         "levelMoves": [
@@ -107929,6 +108537,7 @@
         "forms": [
             {
                 "formName": "Curly Form",
+                "formKey": "curly",
                 "type1": "Dragon",
                 "type2": "Water",
                 "height": 0.3,
@@ -107948,10 +108557,12 @@
                 },
                 "catchRate": 100,
                 "baseFriendship": 50,
-                "baseExp": 166
+                "baseExp": 166,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Droopy Form",
+                "formKey": "droopy",
                 "type1": "Dragon",
                 "type2": "Water",
                 "height": 0.3,
@@ -107971,10 +108582,12 @@
                 },
                 "catchRate": 100,
                 "baseFriendship": 50,
-                "baseExp": 166
+                "baseExp": 166,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Stretchy Form",
+                "formKey": "stretchy",
                 "type1": "Dragon",
                 "type2": "Water",
                 "height": 0.3,
@@ -107994,7 +108607,8 @@
                 },
                 "catchRate": 100,
                 "baseFriendship": 50,
-                "baseExp": 166
+                "baseExp": 166,
+                "genderDiffs": "false"
             }
         ],
         "cost": 5,
@@ -108388,6 +109002,7 @@
         "forms": [
             {
                 "formName": "Two-Segment Form",
+                "formKey": "two-segment",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 3.6,
@@ -108409,11 +109024,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 182,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Three-Segment Form",
+                "formKey": "three-segment",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 4.5,
@@ -110273,6 +110888,7 @@
         "forms": [
             {
                 "formName": "Chest Form",
+                "formKey": "chest",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.3,
@@ -110293,11 +110909,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 60,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Roaming Form",
+                "formKey": "roaming",
                 "type1": "Ghost",
                 "type2": "null",
                 "height": 0.1,
@@ -110317,7 +110933,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 60
+                "baseExp": 60,
+                "genderDiffs": "false"
             }
         ],
         "cost": 5,
@@ -111177,6 +111794,7 @@
         "forms": [
             {
                 "formName": "Apex Build",
+                "formKey": "apex-build",
                 "type1": "Fighting",
                 "type2": "Dragon",
                 "height": 2.5,
@@ -111196,10 +111814,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Limited Build",
+                "formKey": "limited-build",
                 "type1": "Fighting",
                 "type2": "Dragon",
                 "height": 3.5,
@@ -111219,10 +111839,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Sprinting Build",
+                "formKey": "sprinting-build",
                 "type1": "Fighting",
                 "type2": "Dragon",
                 "height": 3.5,
@@ -111242,10 +111864,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Swimming Build",
+                "formKey": "swimming-build",
                 "type1": "Fighting",
                 "type2": "Dragon",
                 "height": 3.5,
@@ -111265,10 +111889,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Gliding Build",
+                "formKey": "gliding-build",
                 "type1": "Fighting",
                 "type2": "Dragon",
                 "height": 3.5,
@@ -111288,7 +111914,8 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             }
         ],
         "cost": 9,
@@ -111406,6 +112033,7 @@
         "forms": [
             {
                 "formName": "Ultimate Mode",
+                "formKey": "ultimate-mode",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 3.5,
@@ -111425,10 +112053,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Low-Power Mode",
+                "formKey": "low-power-mode",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 2.8,
@@ -111448,10 +112078,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Drive Mode",
+                "formKey": "drive-mode",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 2.8,
@@ -111471,10 +112103,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Aquatic Mode",
+                "formKey": "aquatic-mode",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 2.8,
@@ -111494,10 +112128,12 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Glide Mode",
+                "formKey": "glide-mode",
                 "type1": "Electric",
                 "type2": "Dragon",
                 "height": 2.8,
@@ -111517,7 +112153,8 @@
                 },
                 "catchRate": 3,
                 "baseFriendship": 0,
-                "baseExp": 335
+                "baseExp": 335,
+                "genderDiffs": "false"
             }
         ],
         "cost": 9,
@@ -111954,6 +112591,7 @@
         "forms": [
             {
                 "formName": "Counterfeit Form",
+                "formKey": "counterfeit",
                 "type1": "Grass",
                 "type2": "Ghost",
                 "height": 0.1,
@@ -111973,10 +112611,12 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 62
+                "baseExp": 62,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Artisan Form",
+                "formKey": "artisan",
                 "type1": "Grass",
                 "type2": "Ghost",
                 "height": 0.1,
@@ -111996,7 +112636,8 @@
                 },
                 "catchRate": 120,
                 "baseFriendship": 50,
-                "baseExp": 62
+                "baseExp": 62,
+                "genderDiffs": "false"
             }
         ],
         "cost": 4,
@@ -112102,6 +112743,7 @@
         "forms": [
             {
                 "formName": "Unremarkable Form",
+                "formKey": "unremarkable",
                 "type1": "Grass",
                 "type2": "Ghost",
                 "height": 0.2,
@@ -112125,6 +112767,7 @@
             },
             {
                 "formName": "Masterpiece Form",
+                "formKey": "masterpiece",
                 "type1": "Grass",
                 "type2": "Ghost",
                 "height": 0.2,
@@ -112536,6 +113179,7 @@
         "forms": [
             {
                 "formName": "Teal Mask",
+                "formKey": "teal-mask",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 1.2,
@@ -112555,10 +113199,12 @@
                 },
                 "catchRate": 5,
                 "baseFriendship": 50,
-                "baseExp": 275
+                "baseExp": 275,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Wellspring Mask",
+                "formKey": "wellspring-mask",
                 "type1": "Grass",
                 "type2": "Water",
                 "height": 1.2,
@@ -112582,6 +113228,7 @@
             },
             {
                 "formName": "Hearthflame Mask",
+                "formKey": "hearthflame-mask",
                 "type1": "Grass",
                 "type2": "Fire",
                 "height": 1.2,
@@ -112605,6 +113252,7 @@
             },
             {
                 "formName": "Cornerstone Mask",
+                "formKey": "cornerstone-mask",
                 "type1": "Grass",
                 "type2": "Rock",
                 "height": 1.2,
@@ -112628,6 +113276,7 @@
             },
             {
                 "formName": "Teal Mask Terastallized",
+                "formKey": "teal-mask-tera",
                 "type1": "Grass",
                 "type2": "null",
                 "height": 1.2,
@@ -112651,6 +113300,7 @@
             },
             {
                 "formName": "Wellspring Mask Terastallized",
+                "formKey": "wellspring-mask-tera",
                 "type1": "Grass",
                 "type2": "Water",
                 "height": 1.2,
@@ -112674,6 +113324,7 @@
             },
             {
                 "formName": "Hearthflame Mask Terastallized",
+                "formKey": "hearthflame-mask-tera",
                 "type1": "Grass",
                 "type2": "Fire",
                 "height": 1.2,
@@ -112697,6 +113348,7 @@
             },
             {
                 "formName": "Cornerstone Mask Terastallized",
+                "formKey": "cornerstone-mask-tera",
                 "type1": "Grass",
                 "type2": "Rock",
                 "height": 1.2,
@@ -113488,6 +114140,7 @@
         "forms": [
             {
                 "formName": "Normal Form",
+                "formKey": "",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 0.2,
@@ -113511,6 +114164,7 @@
             },
             {
                 "formName": "Terastal Form",
+                "formKey": "terastal",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 0.3,
@@ -113534,6 +114188,7 @@
             },
             {
                 "formName": "Stellar Form",
+                "formKey": "stellar",
                 "type1": "Normal",
                 "type2": "null",
                 "height": 1.7,
@@ -117522,6 +118177,7 @@
         "forms": [
             {
                 "formName": "Standard Mode",
+                "formKey": "",
                 "type1": "Ice",
                 "type2": "null",
                 "height": 1.7,
@@ -117545,6 +118201,7 @@
             },
             {
                 "formName": "Zen Mode",
+                "formKey": "zen",
                 "type1": "Ice",
                 "type2": "Fire",
                 "height": 1.7,
@@ -119576,6 +120233,7 @@
         "forms": [
             {
                 "formName": "Combat Breed",
+                "formKey": "combat",
                 "type1": "Fighting",
                 "type2": "null",
                 "height": 1.4,
@@ -119597,11 +120255,11 @@
                 "catchRate": 45,
                 "baseFriendship": 50,
                 "baseExp": 172,
-                "genderDiffs": "false",
-                "formSpriteKey": "\"\""
+                "genderDiffs": "false"
             },
             {
                 "formName": "Blaze Breed",
+                "formKey": "blaze",
                 "type1": "Fighting",
                 "type2": "Fire",
                 "height": 1.4,
@@ -119622,10 +120280,12 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 172
+                "baseExp": 172,
+                "genderDiffs": "false"
             },
             {
                 "formName": "Aqua Breed",
+                "formKey": "aqua",
                 "type1": "Fighting",
                 "type2": "Water",
                 "height": 1.4,
@@ -119646,7 +120306,8 @@
                 },
                 "catchRate": 45,
                 "baseFriendship": 50,
-                "baseExp": 172
+                "baseExp": 172,
+                "genderDiffs": "false"
             }
         ],
         "cost": 5,
@@ -119925,6 +120586,614 @@
             [
                 70,
                 "Blood Moon"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                0,
+                "Meteor Mash"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                0,
+                "Icicle Crash"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                0,
+                "Draining Kiss"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                0,
+                "Electric Terrain"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
+            ],
+            [
+                0,
+                "Flying Press"
+            ],
+            [
+                1,
+                "Tail Whip"
+            ],
+            [
+                1,
+                "Growl"
+            ],
+            [
+                1,
+                "Thunder Shock"
+            ],
+            [
+                1,
+                "Quick Attack"
+            ],
+            [
+                1,
+                "Sweet Kiss"
+            ],
+            [
+                1,
+                "Charm"
+            ],
+            [
+                1,
+                "Nasty Plot"
+            ],
+            [
+                1,
+                "Play Nice"
+            ],
+            [
+                1,
+                "Nuzzle"
+            ],
+            [
+                4,
+                "Thunder Wave"
+            ],
+            [
+                8,
+                "Double Team"
+            ],
+            [
+                12,
+                "Electro Ball"
+            ],
+            [
+                16,
+                "Feint"
+            ],
+            [
+                20,
+                "Spark"
+            ],
+            [
+                24,
+                "Agility"
+            ],
+            [
+                28,
+                "Iron Tail"
+            ],
+            [
+                32,
+                "Discharge"
+            ],
+            [
+                36,
+                "Thunderbolt"
+            ],
+            [
+                40,
+                "Light Screen"
+            ],
+            [
+                44,
+                "Thunder"
+            ],
+            [
+                48,
+                "Pika Papow"
             ],
             [
                 1,
